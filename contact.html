@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Dr. Sneha Rooh">
+<meta name="description" content="Book a therapy session with Dr. Sneha Rooh. Online and in-person sessions for grief, trauma, burnout, chronic illness and more.">
+<!-- ======== Page title ============ -->
+<title>Contact | Dr. Sneha Rooh</title>
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        :root {
+            --cnt-green: #133F26;
+            --cnt-accent: #E7FEB8;
+            --cnt-cream: #FCFCF2;
+            --cnt-text: #133F26;
+        }
+
+        .section-padding-custom {
+            padding: 80px 0;
+        }
+
+        .contact-page-section {
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-page-section::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            left: -150px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(231,254,184,0.03);
+            pointer-events: none;
+        }
+
+        .contact-info-wrap .contact-subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--cnt-accent);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contact-info-wrap .contact-heading {
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+        .contact-info-wrap .contact-desc {
+            font-size: 16px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 28px;
+        }
+        .contact-info-wrap .contact-divider {
+            width: 60px;
+            height: 2px;
+            background: var(--cnt-accent);
+            margin-bottom: 28px;
+            border-radius: 2px;
+        }
+
+        .contact-info-wrap .contact-card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .contact-info-wrap .contact-card-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(231,254,184,0.04);
+            border: 1px solid rgba(231,254,184,0.06);
+            border-radius: 12px;
+            padding: 16px 20px;
+        }
+        .contact-info-wrap .contact-card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: rgba(231,254,184,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--cnt-accent);
+            flex-shrink: 0;
+        }
+        .contact-info-wrap .contact-card-item h6 {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        .contact-info-wrap .contact-card-item p,
+        .contact-info-wrap .contact-card-item a {
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+        }
+        .contact-info-wrap .contact-card-item a:hover {
+            color: var(--cnt-accent);
+        }
+
+        .contact-form-wrap {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px 36px;
+            box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+        }
+        .contact-form-wrap .form-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--cnt-green);
+            margin-bottom: 24px;
+        }
+        .contact-form-wrap .cnt-field input,
+        .contact-form-wrap .cnt-field textarea,
+        .contact-form-wrap .cnt-field select {
+            width: 100%;
+            border: 1px solid rgba(19,63,38,0.08);
+            border-radius: 10px;
+            padding: 13px 16px;
+            font-size: 14px;
+            color: var(--cnt-text);
+            background: var(--cnt-cream);
+            transition: all 0.3s ease;
+        }
+        .contact-form-wrap .cnt-field input:focus,
+        .contact-form-wrap .cnt-field textarea:focus,
+        .contact-form-wrap .cnt-field select:focus {
+            outline: none;
+            border-color: var(--cnt-green);
+            box-shadow: 0 0 0 3px rgba(231,254,184,0.15);
+        }
+        .contact-form-wrap .cnt-field textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .contact-form-wrap .cnt-field .nice-select {
+            width: 100% !important;
+            border: 1px solid rgba(19,63,38,0.08) !important;
+            border-radius: 10px !important;
+            background: var(--cnt-cream) !important;
+        }
+        .contact-form-wrap .cnt-field .nice-select .current {
+            font-size: 14px;
+            color: var(--cnt-text);
+        }
+        .contact-form-wrap .submit-btn {
+            width: 100%;
+            justify-content: center;
+            padding: 14px 28px;
+            font-size: 15px;
+        }
+        .contact-form-wrap .submit-note {
+            font-size: 13px;
+            color: rgba(19,63,38,0.4);
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .contact-social-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 28px;
+        }
+        .contact-social-row span {
+            font-size: 13px;
+            color: rgba(255,255,255,0.5);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .contact-social-row a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(231,254,184,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .contact-social-row a:hover {
+            background: var(--cnt-accent);
+            color: var(--cnt-green);
+        }
+
+        .map-section-custom {
+            width: 100%;
+            overflow: hidden;
+        }
+        .map-section-custom .map-frame {
+            width: 100%;
+            height: 340px;
+            position: relative;
+        }
+        .map-section-custom .map-frame iframe {
+            width: 100%;
+            height: 100%;
+            display: block;
+            filter: grayscale(0.4) sepia(0.05) hue-rotate(100deg) saturate(0.3);
+            transition: filter 0.5s ease;
+        }
+        .map-section-custom .map-frame iframe:hover {
+            filter: grayscale(0) sepia(0) hue-rotate(0deg) saturate(1);
+        }
+
+        @media (max-width: 768px) {
+            .section-padding-custom { padding: 50px 0; }
+            .contact-info-wrap .contact-heading { font-size: 24px; }
+            .contact-form-wrap { padding: 28px 20px; }
+            .map-section-custom .map-frame { height: 240px; }
+        }
+
+        .skel-wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skel-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(19,63,38,0.04);
+        }
+        .skel-logo {
+            width: 120px;
+            height: 32px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+            flex-shrink: 0;
+        }
+        .skel-nav {
+            display: flex;
+            gap: 24px;
+            flex: 1;
+        }
+        .skel-hero {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            padding: 32px 0;
+        }
+        .skel-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .skel-block {
+            border-radius: 12px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .skel-block-lg {
+            width: 200px;
+            height: 180px;
+            flex-shrink: 0;
+        }
+        .skel-body {
+            display: flex;
+            gap: 24px;
+        }
+        .skel-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skel-card {
+            border-radius: 14px;
+            padding: 28px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+            min-height: 120px;
+        }
+        .skel-footer {
+            padding: 24px 0;
+            border-top: 1px solid rgba(19,63,38,0.04);
+        }
+        .skel-line {
+            height: 14px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .w-20 { width: 20%; }
+        .w-30 { width: 30%; }
+        .w-40 { width: 40%; }
+        .w-50 { width: 50%; }
+        .w-60 { width: 60%; }
+        .w-70 { width: 70%; }
+        .w-80 { width: 80%; }
+
+        @keyframes skel-shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .preloader {
+            align-items: flex-start;
+            padding: 40px 0;
+            background: var(--cnt-cream);
+        }
+        .preloader .animation-preloader,
+        .preloader .loader {
+            display: none;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        h2, h4, h6 {
+            font-weight: 600;
+        }
+        .breadcrumb-wrapper h1 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+        }
+    </style>
+
+    </head>
+    <body>
+
+         <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="skel-wrap">
+                <div class="skel-header">
+                    <div class="skel-logo"></div>
+                    <div class="skel-nav">
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                    </div>
+                </div>
+                <div class="skel-body">
+                    <div class="skel-col">
+                        <div class="skel-card"></div>
+                    </div>
+                    <div class="skel-col">
+                        <div class="skel-card"></div>
+                    </div>
+                </div>
+                <div class="skel-footer">
+                    <div class="skel-line w-50"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/black-logo.svg" alt="Dr. Sneha Rooh">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="offcanvas-title">Welcome.</h3>
+                        <p>Trauma-informed therapy and holistic healing <br> for grief, trauma, chronic illness and burnout.</p>
+                        <div class="mobile-menu fix mt-3"></div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="offcanvas__contact">
+                            <h3>Information</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span>Email:</span>
+                                    <a href="mailto:hello@drsneha.care">hello@drsneha.care</a>
+                                </li>
+                                <li>
+                                    <span>Sessions:</span>
+                                    Online Across India & Worldwide
+                                </li>
+                                <li>
+                                    <span>In-Person:</span>
+                                    By Appointment
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="theme-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book a Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Top Section Start -->
+         <div class="header-top-section">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <p>
+                        Dr. Sneha Rooh &ndash; Palliative Physician &amp; Integrative Psychotherapist <a href="contact.html">Book a Session</a>.
+                    </p>
+                    <ul class="top-list">
+                        <li>
+                            <i class="fal fa-envelope"></i>
+                            <a href="mailto:hello@drsneha.care">hello@drsneha.care</a>
+                        </li>
+                        <li>
+                            <i class="far fa-clock"></i>
+                            <p>Online &amp; In-Person Sessions</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-section header-1">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <a href="index.html" class="header-logo1">
+                                <img src="assets/img/logo/black-logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="service.html">Services</a></li>
+                                            <li class="active"><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="header-contact-info">
+                                <a href="contact.html" class="theme-btn">
+                                    <i class="far fa-chevron-right"></i>
+                                    Book a Session
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fal fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PLACEHOLDER: Search bar and cart sidebar removed -->
+
+        <!-- Breadcrumb Section Start -->
+        <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/inner/breadcrumb-img.jpg');">
+            <div class="container">
+                <div class="page-heading">
+                   <div class="breadcrumb-items-area">
+                        <div class="breadcrumb-sub-title">
+                             <h1 class="text-white wow fadeInUp" data-wow-delay=".3s">Contact</h1>
+                             <p class="text-white wow fadeInUp mt-2" data-wow-delay=".4s" style="font-size: 16px; opacity: 0.85; max-width: 500px;">I'm here — reach out whenever you're ready.</p>
+                         </div>
+                         <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                             <li>
+                                 <a href="index.html">
+                                 Home
+                                 </a>
+                             </li>
+                             <li>
+                                 //
+                             </li>
+                             <li>
+                                 Contact
+                             </li>
+                         </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section Start -->
+<section class="contact-page-section section-padding fix" style="background: var(--cnt-green);">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="contact-info-wrap wow fadeInUp" data-wow-delay=".2s">
+                    <span class="contact-subtitle">GET IN TOUCH</span>
+                    <h2 class="contact-heading">Whenever you're ready,<br>I'm here.</h2>
+                    <p class="contact-desc">Whether you're navigating grief, trauma, burnout, illness or simply seeking a deeper connection with yourself — you're welcome here. Share a few details and I'll reach out.</p>
+                    <div class="contact-divider"></div>
+                    <div class="contact-card-list">
+                        <div class="contact-card-item">
+                            <div class="contact-card-icon"><i class="far fa-envelope"></i></div>
+                            <div>
+                                <h6>Email</h6>
+                                <a href="mailto:hello@drsneha.care">hello@drsneha.care</a>
+                            </div>
+                        </div>
+                        <div class="contact-card-item">
+                            <div class="contact-card-icon"><i class="far fa-globe"></i></div>
+                            <div>
+                                <h6>Sessions</h6>
+                                <p>Online Across India &amp; Worldwide</p>
+                                <p>In-Person By Appointment</p>
+                            </div>
+                        </div>
+                        <div class="contact-card-item">
+                            <div class="contact-card-icon"><i class="far fa-clock"></i></div>
+                            <div>
+                                <h6>Response Time</h6>
+                                <p>I typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social-row">
+                        <span>Follow</span>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-form-wrap wow fadeInUp" data-wow-delay=".4s">
+                    <h3 class="form-title">I'd like to book a consultation.</h3>
+                    <form action="#">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="cnt-field">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-field">
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-field">
+                                    <input type="text" name="phone" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-field">
+                                    <select class="single-select w-100">
+                                        <option>Select a service...</option>
+                                        <option>Somatic Psychotherapy</option>
+                                        <option>Grief &amp; Palliative Care</option>
+                                        <option>Family Constellation Therapy</option>
+                                        <option>Reiki Healing</option>
+                                        <option>Akashic Records Reading</option>
+                                        <option>Reiki Training</option>
+                                        <option>Corporate Wellness</option>
+                                        <option>Not Sure Yet</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-field">
+                                    <select class="single-select w-100">
+                                        <option>Online Session</option>
+                                        <option>In-Person Session</option>
+                                        <option>Not Sure Yet</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="cnt-field">
+                                    <textarea name="message" placeholder="Tell me a little about what brings you here..." rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="submit" class="theme-btn submit-btn">
+                                    <i class="far fa-chevron-right"></i>
+                                    SEND YOUR MESSAGE
+                                </button>
+                                <p class="submit-note">Your information is kept confidential and never shared.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Map Section Start -->
+        <div class="map-section-custom fix">
+            <div class="map-frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37825455.14811651!2d60.91942613920566!3d24.76831071524813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399f1e8c5a2f1b0d%3A0x9a9b9a9b9a9b9a9b!2sIndia!5e0!3m2!1sen!2sin!4v1" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Footer Section Start -->
+        <footer class="footer-section section-bg-2 fix">
+            <div class="right-shape float-bob-x">
+                <img src="assets/img/home-1/footer/right-shape.png" alt="img">
+            </div>
+            <div class="top-shape float-bob-y">
+                <img src="assets/img/home-1/footer/top.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="footer-widget-wrapper">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <img src="assets/img/logo/white-logo.svg" alt="Dr. Sneha Rooh">
+                                </div>
+                                <div class="footer-content">
+                                    <h4 class="foot-title">Trauma-informed therapy and holistic healing for grief, trauma, chronic illness, burnout, and life's most difficult transitions.</h4>
+                                    <div class="social-icon d-flex align-items-center">
+                                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-6 ps-lg-5 col-sm-12 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                     <h3>Quick Links</h3>
+                                </div>
+                                <ul class="list-area">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 ps-xxl-5 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="footer-contect">
+                                        <li>
+                                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                                            <div class="content"><p><a href="mailto:hello@drsneha.care">hello@drsneha.care</a></p></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><i class="fas fa-globe"></i></div>
+                                            <div class="content"><p>Online Across India &amp; Worldwide</p></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                            <div class="content"><p>In-Person By Appointment</p></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="single-footer-widget style-bg-white">
+                                <div class="widget-head">
+                                    <h3>Services</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="list-area">
+                                        <li><a href="service.html">Somatic Psychotherapy</a></li>
+                                        <li><a href="service.html">Grief &amp; Palliative Care</a></li>
+                                        <li><a href="service.html">Family Constellation Therapy</a></li>
+                                        <li><a href="service.html">Reiki &amp; Energy Healing</a></li>
+                                        <li><a href="service.html">Akashic Records Reading</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-shape">
+                        <img src="assets/img/home-2/footer-shape.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-4 wow fadeInUp">
+                <div class="container">
+                    <div class="footer-bottom-wrapper">
+                        <p>&copy; 2025 Dr. Sneha Rooh. All rights reserved.</p>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Gsap Animation Js >>-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--<< ScrollTrigger Js >>-->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!--<< SplitText Js >>-->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!--<< splitType Js >>-->
+        <script src="assets/js/splitType.js"></script>
+        <!--<< Ajax Js >>-->
+        <script src="assets/js/ajax-mail.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

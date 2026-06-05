@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Dr. Sneha Rooh">
+<meta name="description" content="About Dr. Sneha Rooh - Palliative Physician, Integrative Psychotherapist & Somatic Therapist. Trauma-informed, queer-affirmative therapy.">
+<!-- ======== Page title ============ -->
+<title>About | Dr. Sneha Rooh</title>
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        :root {
+            --about-accent: #E7FEB8;
+            --about-green: #133F26;
+            --about-cream: #FCFCF2;
+            --about-text: #133F26;
+        }
+
+        .about-hero {
+            background: var(--about-cream);
+            position: relative;
+            overflow: hidden;
+        }
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(231,254,184,0.06);
+            pointer-events: none;
+        }
+        .about-hero .hero-image-frame {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .about-hero .hero-image-frame::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 2px dashed rgba(231,254,184,0.25);
+            border-radius: 24px;
+            margin: -8px;
+            pointer-events: none;
+        }
+        .about-hero .hero-image-frame img {
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+        }
+        .about-hero .badge-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(231,254,184,0.1);
+            color: var(--about-green);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 6px 16px 6px 10px;
+            border-radius: 30px;
+            margin-bottom: 14px;
+        }
+        .about-hero .badge-tag i {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--about-green);
+            color: var(--about-cream);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        .about-hero .hero-heading {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--about-green);
+            margin-bottom: 18px;
+        }
+        .about-hero .hero-heading span {
+            color: var(--about-green);
+            background: var(--about-accent);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+        .about-hero .hero-text {
+            font-size: 16px;
+            line-height: 1.75;
+            color: var(--about-text);
+            margin-bottom: 16px;
+        }
+        .about-hero .qual-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 28px;
+        }
+        .about-hero .qual-badges span {
+            background: var(--about-cream);
+            border: 1px solid rgba(19,63,38,0.08);
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--about-green);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .about-hero .qual-badges span i {
+            color: var(--about-green);
+            font-size: 10px;
+        }
+        .about-hero .hero-quote {
+            background: var(--about-accent);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 20px 0 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .about-hero .hero-quote i {
+            font-size: 22px;
+            color: var(--about-green);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .about-hero .hero-quote p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--about-green);
+            font-style: italic;
+        }
+
+        .journey-section {
+            background: var(--about-green);
+            color: var(--about-cream);
+            position: relative;
+            overflow: hidden;
+        }
+        .journey-section::before {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(231,254,184,0.03);
+            pointer-events: none;
+        }
+        .journey-section .section-subtitle-light {
+            font-size: 14px;
+            color: var(--about-accent);
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .journey-section .section-title-light h2 {
+            color: var(--about-cream);
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .journey-section .section-title-light h2 span {
+            color: var(--about-accent);
+        }
+        .journey-section .journey-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: rgba(252,252,242,0.85);
+            margin-bottom: 16px;
+        }
+        .journey-section .journey-quote-block {
+            background: rgba(231,254,184,0.06);
+            border-left: 3px solid var(--about-accent);
+            border-radius: 0 12px 12px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .journey-section .journey-quote-block p {
+            margin: 0;
+            font-size: 17px;
+            line-height: 1.6;
+            color: var(--about-accent);
+            font-style: italic;
+        }
+        .journey-section .journey-quote-block span {
+            display: block;
+            margin-top: 8px;
+            font-size: 13px;
+            color: rgba(252,252,242,0.6);
+            font-style: normal;
+        }
+        .journey-section .journey-image-frame {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .journey-section .journey-image-frame img {
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+        }
+        .journey-section .journey-image-frame .floating-tag {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: var(--about-cream);
+            border-radius: 10px;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .journey-section .journey-image-frame .floating-tag i {
+            font-size: 20px;
+            color: var(--about-green);
+        }
+        .journey-section .journey-image-frame .floating-tag h6 {
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0;
+            color: var(--about-green);
+        }
+        .journey-section .journey-image-frame .floating-tag p {
+            font-size: 11px;
+            margin: 0;
+            color: var(--about-green);
+        }
+
+        .quals-section {
+            background: var(--about-cream);
+        }
+        .quals-section .qual-card {
+            background: var(--about-cream);
+            border: 1px solid rgba(19,63,38,0.06);
+            border-radius: 14px;
+            padding: 28px 24px;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(19,63,38,0.03);
+        }
+        .quals-section .qual-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(231,254,184,0.1);
+            border-color: var(--about-accent);
+        }
+        .quals-section .qual-card .qual-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(231,254,184,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--about-green);
+            margin-bottom: 16px;
+        }
+        .quals-section .qual-card h5 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--about-green);
+            margin-bottom: 6px;
+        }
+        .quals-section .qual-card p {
+            font-size: 14px;
+            color: var(--about-text);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .modalities-grid .mod-card {
+            background: var(--about-cream);
+            border-radius: 16px;
+            padding: 32px 28px;
+            height: 100%;
+            box-shadow: 0 8px 28px rgba(19,63,38,0.04);
+            border: 1px solid rgba(231,254,184,0.12);
+            transition: all 0.3s ease;
+        }
+        .modalities-grid .mod-card:hover {
+            box-shadow: 0 16px 40px rgba(231,254,184,0.1);
+            border-color: var(--about-accent);
+        }
+        .modalities-grid .mod-card .mod-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: var(--about-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--about-green);
+            margin-bottom: 20px;
+        }
+        .modalities-grid .mod-card h4 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--about-green);
+            margin-bottom: 14px;
+        }
+        .modalities-grid .mod-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .modalities-grid .mod-card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 6px 0;
+            font-size: 14px;
+            color: var(--about-text);
+            border-bottom: 1px solid rgba(19,63,38,0.03);
+        }
+        .modalities-grid .mod-card ul li:last-child {
+            border-bottom: none;
+        }
+        .modalities-grid .mod-card ul li i {
+            color: var(--about-green);
+            font-size: 11px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+
+        .approach-section {
+            background: var(--about-green);
+            position: relative;
+            overflow: hidden;
+        }
+        .approach-section::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(231,254,184,0.03);
+            pointer-events: none;
+        }
+        .approach-section .approach-card {
+            background: rgba(252,252,242,0.04);
+            border: 1px solid rgba(231,254,184,0.08);
+            border-radius: 16px;
+            padding: 32px 28px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        .approach-section .approach-card:hover {
+            background: rgba(252,252,242,0.07);
+            border-color: rgba(231,254,184,0.15);
+            transform: translateY(-4px);
+        }
+        .approach-section .approach-card .apr-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 13px;
+            background: rgba(231,254,184,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: var(--about-accent);
+            margin-bottom: 18px;
+        }
+        .approach-section .approach-card h5 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--about-cream);
+            margin-bottom: 8px;
+        }
+        .approach-section .approach-card p {
+            font-size: 14px;
+            color: rgba(252,252,242,0.7);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .why-section-about {
+            background: var(--about-cream);
+        }
+        .why-section-about .why-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(19,63,38,0.04);
+        }
+        .why-section-about .why-item:last-child {
+            border-bottom: none;
+        }
+        .why-section-about .why-item .why-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(231,254,184,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--about-green);
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        .why-section-about .why-item:hover .why-icon {
+            background: var(--about-green);
+            color: var(--about-cream);
+        }
+        .why-section-about .why-item h5 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--about-green);
+            margin-bottom: 4px;
+        }
+        .why-section-about .why-item p {
+            font-size: 14px;
+            color: var(--about-text);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .cta-banner {
+            background: linear-gradient(135deg, var(--about-green) 0%, #1a5a3a 100%);
+            border-radius: 20px;
+            padding: 56px 48px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-banner::before {
+            content: '\201C';
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            font-size: 200px;
+            line-height: 1;
+            font-family: Georgia, serif;
+            color: var(--about-accent);
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        .cta-banner h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: var(--about-cream);
+            margin-bottom: 12px;
+        }
+        .cta-banner p {
+            font-size: 16px;
+            color: rgba(252,252,242,0.8);
+            margin-bottom: 24px;
+            max-width: 600px;
+        }
+        .cta-banner .theme-btn {
+            background: var(--about-accent);
+            color: var(--about-green);
+            border: none;
+        }
+        .cta-banner .theme-btn:hover {
+            background: var(--about-cream);
+        }
+
+        .section-padding-custom {
+            padding: 100px 0;
+        }
+        @media (max-width: 991px) {
+            .section-padding-custom {
+                padding: 60px 0;
+            }
+            .about-hero .hero-heading {
+                font-size: 26px;
+            }
+            .journey-section .section-title-light h2 {
+                font-size: 26px;
+            }
+            .cta-banner {
+                padding: 36px 24px;
+            }
+            .cta-banner h2 {
+                font-size: 24px;
+            }
+        }
+
+        .skel-wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skel-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(19,63,38,0.04);
+        }
+        .skel-logo {
+            width: 120px;
+            height: 32px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+            flex-shrink: 0;
+        }
+        .skel-nav {
+            display: flex;
+            gap: 24px;
+            flex: 1;
+        }
+        .skel-hero {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            padding: 32px 0;
+        }
+        .skel-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .skel-block {
+            border-radius: 12px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .skel-block-lg {
+            width: 200px;
+            height: 180px;
+            flex-shrink: 0;
+        }
+        .skel-body {
+            display: flex;
+            gap: 24px;
+        }
+        .skel-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skel-card {
+            border-radius: 14px;
+            padding: 28px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+            min-height: 120px;
+        }
+        .skel-footer {
+            padding: 24px 0;
+            border-top: 1px solid rgba(19,63,38,0.04);
+        }
+        .skel-line {
+            height: 14px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .w-20 { width: 20%; }
+        .w-30 { width: 30%; }
+        .w-40 { width: 40%; }
+        .w-50 { width: 50%; }
+        .w-60 { width: 60%; }
+        .w-70 { width: 70%; }
+        .w-80 { width: 80%; }
+
+        @keyframes skel-shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .preloader {
+            align-items: flex-start;
+            padding: 40px 0;
+            background: var(--about-cream);
+        }
+        .preloader .animation-preloader,
+        .preloader .loader {
+            display: none;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        h2, h4, h6 {
+            font-weight: 600;
+        }
+        .about-hero h1.hero-heading {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+        }
+    </style>
+    </head>
+    <body>
+
+         <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="skel-wrap">
+                <div class="skel-header">
+                    <div class="skel-logo"></div>
+                    <div class="skel-nav">
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                    </div>
+                </div>
+                <div class="skel-hero">
+                    <div class="skel-block skel-block-lg"></div>
+                    <div class="skel-hero-content">
+                        <div class="skel-line w-40"></div>
+                        <div class="skel-line w-60"></div>
+                        <div class="skel-line w-30"></div>
+                    </div>
+                </div>
+                <div class="skel-body">
+                    <div class="skel-col">
+                        <div class="skel-card"></div>
+                        <div class="skel-card"></div>
+                    </div>
+                    <div class="skel-col">
+                        <div class="skel-card"></div>
+                        <div class="skel-card"></div>
+                    </div>
+                </div>
+                <div class="skel-footer">
+                    <div class="skel-line w-50"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/black-logo.svg" alt="Dr. Sneha Rooh">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="offcanvas-title">Welcome.</h3>
+                        <p>Trauma-informed therapy and holistic healing <br> for grief, trauma, chronic illness and burnout.</p>
+                        <div class="mobile-menu fix mt-3"></div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="offcanvas__contact">
+                            <h3>Information</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span>Email:</span>
+                                    <a href="mailto:hello@drsneha.care">hello@drsneha.care</a>
+                                </li>
+                                <li>
+                                    <span>Sessions:</span>
+                                    Online Across India & Worldwide
+                                </li>
+                                <li>
+                                    <span>In-Person:</span>
+                                    By Appointment
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="theme-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book a Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Top Section Start -->
+         <div class="header-top-section">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <p>
+                        Dr. Sneha Rooh &ndash; Palliative Physician &amp; Integrative Psychotherapist <a href="contact.html">Book a Session</a>.
+                    </p>
+                    <ul class="top-list">
+                        <li>
+                            <i class="fal fa-envelope"></i>
+                            <a href="mailto:hello@drsneha.care">hello@drsneha.care</a>
+                        </li>
+                        <li>
+                            <i class="far fa-clock"></i>
+                            <p>Online &amp; In-Person Sessions</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-section header-1">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <a href="index.html" class="header-logo1">
+                                <img src="assets/img/logo/black-logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="index.html">Home</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="service.html">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="header-contact-info">
+                                <a href="contact.html" class="theme-btn">
+                                    <i class="far fa-chevron-right"></i>
+                                    Book a Session
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fal fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PLACEHOLDER: Search bar and cart sidebar removed -->
+
+        <!-- Breadcrumb Section Start -->
+        <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/inner/breadcrumb-img.jpg');">
+            <div class="container">
+                <div class="page-heading">
+                   <div class="breadcrumb-items-area">
+                         <div class="breadcrumb-sub-title">
+                            <h1 class="text-white wow fadeInUp" data-wow-delay=".3s">About Dr. Sneha Rooh</h1>
+                            <p class="text-white wow fadeInUp mt-2" data-wow-delay=".4s" style="font-size: 16px; opacity: 0.85; max-width: 500px;">Palliative Physician &bull; Integrative Psychotherapist &bull; Somatic Therapist</p>
+                        </div>
+                        <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                            <li>
+                                <a href="index.html">
+                                Home
+                                </a>
+                            </li>
+                            <li>
+                                //
+                            </li>
+                            <li>
+                                About
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Hero Section Start (Redesigned) -->
+        <section class="about-hero section-padding-custom fix">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="hero-image-frame wow img-custom-anim-left" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <!-- PLACEHOLDER: Replace with Dr. Sneha's photo -->
+                            <img src="assets/img/home-3/about/about-1.jpg" alt="Dr. Sneha Rooh">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="badge-tag wow fadeInUp" data-wow-delay=".1s">
+                            <i class="fas fa-user-md"></i>
+                            MEET DR. SNEHA
+                        </div>
+                        <h1 class="hero-heading wow fadeInUp" data-wow-delay=".2s">
+                            A physician, psychotherapist and healer — <span>holding space for the whole of you</span>.
+                        </h1>
+                        <p class="hero-text wow fadeInUp" data-wow-delay=".3s">
+                            Dr. Sneha Rooh is a <strong>Palliative Physician</strong> and <strong>Integrative Psychotherapist</strong> whose work sits at the intersection of medicine, psychology, somatic healing, creative arts and energy work.
+                        </p>
+                        <p class="hero-text wow fadeInUp" data-wow-delay=".35s">
+                            With over six years of clinical and therapeutic experience, she supports individuals navigating grief, trauma, chronic illness, caregiver stress, burnout, body image distress and existential concerns — with care that is trauma-informed, queer-affirmative and neurodivergent-affirmative.
+                        </p>
+                        <div class="qual-badges wow fadeInUp" data-wow-delay=".4s">
+                            <span><i class="fas fa-circle"></i> Palliative Physician</span>
+                            <span><i class="fas fa-circle"></i> Integrative Psychotherapist</span>
+                            <span><i class="fas fa-circle"></i> Somatic Therapist</span>
+                            <span><i class="fas fa-circle"></i> Trauma-Informed Practitioner</span>
+                            <span><i class="fas fa-circle"></i> Reiki Master (Level 2)</span>
+                        </div>
+                        <div class="hero-quote wow fadeInUp" data-wow-delay=".45s">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Healing isn't about fixing what's broken. It's about remembering what's whole — and meeting yourself there with compassion, courage and care.</p>
+                        </div>
+                        <div class="mt-4 wow fadeInUp" data-wow-delay=".5s">
+                            <a href="contact.html" class="theme-btn">
+                                <i class="far fa-chevron-right"></i>
+                                BOOK A SESSION
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dr. Sneha's Journey Section Start -->
+        <section class="journey-section section-padding-custom fix">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-subtitle-light wow fadeInUp" data-wow-delay=".1s">Her Journey</div>
+                        <div class="section-title-light wow fadeInUp" data-wow-delay=".2s">
+                            <h2>From <span>palliative medicine</span> to integrative psychotherapy — a path shaped by presence.</h2>
+                        </div>
+                        <p class="journey-text wow fadeInUp" data-wow-delay=".3s">
+                            Dr. Sneha Rooh began her career as a <strong>palliative physician</strong>, working alongside individuals and families facing serious illness, loss and end-of-life transitions. In those rooms, she witnessed something profound: that healing is not always about cure, and that the deepest wounds are often carried in silence.
+                        </p>
+                        <p class="journey-text wow fadeInUp" data-wow-delay=".35s">
+                            This experience led her to pursue training in <strong>integrative psychotherapy, somatic healing, creative arts therapy and energy work</strong> — building a practice that bridges the wisdom of medicine with the depth of therapeutic presence.
+                        </p>
+                        <div class="journey-quote-block wow fadeInUp" data-wow-delay=".4s">
+                            <p>"Healing lives in the space between expertise and humanity. My work is to hold that space — with reverence, humility and care."</p>
+                            <span>&mdash; Dr. Sneha Rooh</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="journey-image-frame wow img-custom-anim-right" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <!-- PLACEHOLDER: Replace with Dr. Sneha's photo -->
+                            <img src="assets/img/home-3/choose-us/choose-1.jpg" alt="Dr. Sneha Rooh">
+                            <div class="floating-tag">
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <h6>6+ Years Experience</h6>
+                                    <p>Clinical &amp; Therapeutic Practice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualifications & Training Section Start -->
+        <section class="quals-section section-padding-custom fix">
+            <div class="container">
+                <div class="section-title text-center wow fadeInUp mb-5">
+                    <span class="subtitle tz-sub-tilte tz-sub-anim text-uppercase tx-subTitle">QUALIFICATIONS</span>
+                    <h2 class="tx-title sec_title tz-itm-title tz-itm-anim">Training &amp; Credentials</h2>
+                    <p class="mt-2" style="font-size: 15px; color: var(--about-text);">Formal qualifications and professional training that inform her practice.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="qual-card">
+                            <div class="qual-icon"><i class="fas fa-user-md"></i></div>
+                            <h5>Medical Degree (MBBS)</h5>
+                            <p>Foundation in clinical medicine and palliative care.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="qual-card">
+                            <div class="qual-icon"><i class="fas fa-brain"></i></div>
+                            <h5>Integrative Psychotherapy</h5>
+                            <p>Postgraduate training in integrative and relational psychotherapy.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="qual-card">
+                            <div class="qual-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                            <h5>Somatic Therapy</h5>
+                            <p>Body-centred trauma healing and nervous system regulation training.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="qual-card">
+                            <div class="qual-icon"><i class="fas fa-leaf"></i></div>
+                            <h5>Reiki Master (Level 2)</h5>
+                            <p>Certified in Usui Reiki Ryoho for energy healing practice.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="qual-card">
+                            <div class="qual-icon"><i class="fas fa-paint-brush"></i></div>
+                            <h5>Art Therapy</h5>
+                            <p>Training in creative and expressive arts therapeutic approaches.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="qual-card">
+                            <div class="qual-icon"><i class="fas fa-users"></i></div>
+                            <h5>Family Constellation Therapy</h5>
+                            <p>Training in systemic and family constellation facilitation.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="qual-card">
+                            <div class="qual-icon"><i class="fas fa-globe"></i></div>
+                            <h5>Decolonial &amp; Feminist Psychology</h5>
+                            <p>Ongoing study in culturally-rooted, socially-just therapeutic frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="qual-card">
+                            <div class="qual-icon"><i class="fas fa-star"></i></div>
+                            <h5>Akashic Records Practitioner</h5>
+                            <p>Trained in intuitive Akashic Records reading and facilitation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modalities, Focus & Clientele Section (Redesigned) Start -->
+        <section class="section-padding-custom fix" style="background: var(--about-cream);">
+            <div class="container">
+                <div class="section-title text-center wow fadeInUp mb-5">
+                    <span class="subtitle tz-sub-tilte tz-sub-anim text-uppercase tx-subTitle">APPROACH &amp; SCOPE</span>
+                    <h2 class="tx-title sec_title tz-itm-title tz-itm-anim">How she works, what she addresses, and who she supports.</h2>
+                </div>
+                <div class="row g-4 modalities-grid">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="mod-card">
+                            <div class="mod-icon"><i class="fas fa-tools"></i></div>
+                            <h4>Modalities</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Somatic Psychotherapy</li>
+                                <li><i class="fas fa-check"></i> Narrative Therapy</li>
+                                <li><i class="fas fa-check"></i> Art Therapy</li>
+                                <li><i class="fas fa-check"></i> Family Constellation Therapy</li>
+                                <li><i class="fas fa-check"></i> Reiki Healing</li>
+                                <li><i class="fas fa-check"></i> Akashic Work</li>
+                                <li><i class="fas fa-check"></i> Palliative Care &amp; Grief Therapy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay=".35s">
+                        <div class="mod-card">
+                            <div class="mod-icon"><i class="fas fa-crosshairs"></i></div>
+                            <h4>Areas of Focus</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Trauma</li>
+                                <li><i class="fas fa-check"></i> Grief &amp; Bereavement</li>
+                                <li><i class="fas fa-check"></i> Psycho-Oncology</li>
+                                <li><i class="fas fa-check"></i> Chronic Illness</li>
+                                <li><i class="fas fa-check"></i> Sexual Trauma</li>
+                                <li><i class="fas fa-check"></i> Caregiver Burnout</li>
+                                <li><i class="fas fa-check"></i> Body Image Distress</li>
+                                <li><i class="fas fa-check"></i> End-of-Life Support</li>
+                                <li><i class="fas fa-check"></i> Stress &amp; Anxiety</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="mod-card">
+                            <div class="mod-icon"><i class="fas fa-users"></i></div>
+                            <h4>Who She Works With</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Adults</li>
+                                <li><i class="fas fa-check"></i> Caregivers</li>
+                                <li><i class="fas fa-check"></i> Healthcare Professionals</li>
+                                <li><i class="fas fa-check"></i> Individuals Living With Chronic Illness</li>
+                                <li><i class="fas fa-check"></i> LGBTQIA+ Community</li>
+                                <li><i class="fas fa-check"></i> Organisations &amp; Institutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Therapeutic Approach Section Start -->
+        <section class="approach-section section-padding-custom fix">
+            <div class="container">
+                <div class="section-title text-center wow fadeInUp mb-5">
+                    <span class="subtitle tz-sub-tilte tz-sub-anim text-uppercase tx-subTitle" style="color: var(--about-accent); background: rgba(231,254,184,0.1);">THERAPEUTIC APPROACH</span>
+                    <h2 class="tx-title sec_title tz-itm-title tz-itm-anim" style="color: var(--about-cream);">The principles that guide every session.</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="approach-card">
+                            <div class="apr-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h5>Trauma-Informed Care</h5>
+                            <p>Every session is grounded in safety, choice, collaboration and trust. You are never pushed beyond what feels right for you.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".35s">
+                        <div class="approach-card">
+                            <div class="apr-icon"><i class="fas fa-gavel"></i></div>
+                            <h5>Feminist &amp; Decolonial</h5>
+                            <p>Practicing with awareness of power, privilege and cultural context. Healing is not one-size-fits-all — your story and identity matter.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="approach-card">
+                            <div class="apr-icon"><i class="fas fa-heart"></i></div>
+                            <h5>Queer-Affirmative</h5>
+                            <p>A safe, respectful, celebratory space for LGBTQIA+ individuals. Your identity is not a problem to be solved — it is honoured here.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".65s">
+                        <div class="approach-card">
+                            <div class="apr-icon"><i class="fas fa-brain"></i></div>
+                            <h5>Neurodivergent-Affirmative</h5>
+                            <p>Your brain works differently — not wrongly. Sessions are adapted to your sensory, cognitive and emotional needs without masking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Work With Dr. Sneha Section Start -->
+        <section class="why-section-about section-padding-custom fix">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="hero-image-frame wow img-custom-anim-left" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <!-- PLACEHOLDER: Replace with Dr. Sneha's photo or therapy room -->
+                            <img src="assets/img/home-3/service/service-1.jpg" alt="Therapy session">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="section-subtitle wow fadeInUp" data-wow-delay=".1s" style="font-size: 14px; color: var(--about-green); font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;">Why Work With Dr. Sneha</div>
+                        <div class="wow fadeInUp" data-wow-delay=".2s">
+                            <h2 style="font-size: 30px; font-weight: 700; color: var(--about-green); margin-bottom: 12px;">Therapy that honours every part of your experience.</h2>
+                        </div>
+                        <div class="mt-2">
+                            <div class="why-item wow fadeInUp" data-wow-delay=".3s">
+                                <div class="why-icon"><i class="fas fa-user"></i></div>
+                                <div>
+                                    <h5>Whole-Person Care</h5>
+                                    <p>Supporting emotional, physical, relational and spiritual wellbeing as interconnected parts of you.</p>
+                                </div>
+                            </div>
+                            <div class="why-item wow fadeInUp" data-wow-delay=".35s">
+                                <div class="why-icon"><i class="fas fa-stethoscope"></i></div>
+                                <div>
+                                    <h5>Medical + Psychological Expertise</h5>
+                                    <p>A rare integration of clinical medicine and depth psychotherapy for truly holistic care.</p>
+                                </div>
+                            </div>
+                            <div class="why-item wow fadeInUp" data-wow-delay=".4s">
+                                <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                                <div>
+                                    <h5>Trauma-Informed by Design</h5>
+                                    <p>Safety, choice and dignity are not afterthoughts — they are built into every session from the ground up.</p>
+                                </div>
+                            </div>
+                            <div class="why-item wow fadeInUp" data-wow-delay=".45s">
+                                <div class="why-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                                <div>
+                                    <h5>Inclusive &amp; Affirming</h5>
+                                    <p>A welcoming space for LGBTQIA+, neurodivergent individuals and all diverse lived experiences.</p>
+                                </div>
+                            </div>
+                            <div class="why-item wow fadeInUp" data-wow-delay=".5s">
+                                <div class="why-icon"><i class="fas fa-leaf"></i></div>
+                                <div>
+                                    <h5>Personalised Healing</h5>
+                                    <p>No rigid protocols or one-size-fits-all approaches. Every session is tailored to your story, your pace and your needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner Section Start -->
+        <section class="section-padding-custom fix" style="background: var(--about-cream);">
+            <div class="container">
+                <div class="cta-banner wow fadeInUp" data-wow-delay=".2s">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h2>Ready to begin your healing journey?</h2>
+                            <p>Whether you are navigating grief, trauma, burnout, chronic illness, or simply seeking a deeper connection with yourself — you don't have to do it alone.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a href="contact.html" class="theme-btn">
+                                <i class="far fa-chevron-right"></i>
+                                BOOK A SESSION
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer Section Start -->
+        <footer class="footer-section section-bg-2 fix">
+            <div class="right-shape float-bob-x">
+                <img src="assets/img/home-1/footer/right-shape.png" alt="img">
+            </div>
+            <div class="top-shape float-bob-y">
+                <img src="assets/img/home-1/footer/top.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="footer-widget-wrapper">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <img src="assets/img/logo/white-logo.svg" alt="Dr. Sneha Rooh">
+                                </div>
+                                <div class="footer-content">
+                                    <h4 class="foot-title">Trauma-informed therapy and holistic healing for grief, trauma, chronic illness, burnout, and life's most difficult transitions.</h4>
+                                    <div class="social-icon d-flex align-items-center">
+                                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-6 ps-lg-5 col-sm-12 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                     <h3>Quick Links</h3>
+                                </div>
+                                <ul class="list-area">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 ps-xxl-5 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="footer-contect">
+                                        <li>
+                                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                                            <div class="content"><p><a href="mailto:hello@drsneha.care">hello@drsneha.care</a></p></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><i class="fas fa-globe"></i></div>
+                                            <div class="content"><p>Online Across India &amp; Worldwide</p></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                            <div class="content"><p>In-Person By Appointment</p></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="single-footer-widget style-bg-white">
+                                <div class="widget-head">
+                                    <h3>Services</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="list-area">
+                                        <li><a href="service.html">Somatic Psychotherapy</a></li>
+                                        <li><a href="service.html">Grief &amp; Palliative Care</a></li>
+                                        <li><a href="service.html">Family Constellation Therapy</a></li>
+                                        <li><a href="service.html">Reiki &amp; Energy Healing</a></li>
+                                        <li><a href="service.html">Akashic Records Reading</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-shape">
+                        <img src="assets/img/home-2/footer-shape.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-4 wow fadeInUp">
+                <div class="container">
+                    <div class="footer-bottom-wrapper">
+                        <p>&copy; 2025 Dr. Sneha Rooh. All rights reserved.</p>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Gsap Animation Js >>-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--<< ScrollTrigger Js >>-->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!--<< SplitText Js >>-->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!--<< splitType Js >>-->
+        <script src="assets/js/splitType.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

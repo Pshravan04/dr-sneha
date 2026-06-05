@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dr. Sneha Rooh">
+        <meta name="description" content="Therapy services by Dr. Sneha Rooh - Somatic Psychotherapy, Grief & Palliative Care, Family Constellation Therapy, Reiki Healing, Akashic Records, Reiki Training, Corporate Wellness.">
+        <!-- ======== Page title ============ -->
+        <title>Services | Dr. Sneha Rooh</title>
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        :root {
+            --serv-green: #133F26;
+            --serv-accent: #E7FEB8;
+            --serv-cream: #FCFCF2;
+            --serv-text: #133F26;
+        }
+
+        .section-padding-custom {
+            padding: 80px 0;
+        }
+
+        .serv-card {
+            background: #fff;
+            border: 1px solid rgba(19,63,38,0.06);
+            border-radius: 16px;
+            padding: 0;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(19,63,38,0.03);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .serv-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(231,254,184,0.12);
+            border-color: var(--serv-accent);
+        }
+        .serv-card-top {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 24px 28px 0;
+            margin-bottom: 12px;
+        }
+        .serv-card .serv-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(231,254,184,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--serv-green);
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        .serv-card:hover .serv-icon {
+            background: var(--serv-green);
+            color: var(--serv-cream);
+        }
+        .serv-card .serv-cat {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--serv-green);
+            background: rgba(231,254,184,0.12);
+            padding: 4px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .serv-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--serv-green);
+            padding: 0 28px;
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+        .serv-card .serv-sub {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--serv-green);
+            padding: 0 28px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+        .serv-card .serv-body {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--serv-text);
+            padding: 0 28px;
+            margin-bottom: 14px;
+            flex: 1;
+        }
+        .serv-card .serv-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 0 28px;
+            margin-bottom: 16px;
+        }
+        .serv-card .serv-tags span {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--serv-green);
+            background: rgba(231,254,184,0.1);
+            border: 1px solid rgba(231,254,184,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            line-height: 1.4;
+        }
+        .serv-card .serv-foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 16px 28px;
+            border-top: 1px solid rgba(19,63,38,0.04);
+            background: rgba(231,254,184,0.04);
+        }
+        .serv-card .serv-fee {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--serv-green);
+            white-space: nowrap;
+        }
+        .serv-card .theme-btn.small-btn {
+            padding: 10px 22px;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+
+        .cta-banner h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--serv-green);
+            margin-bottom: 10px;
+        }
+        .cta-banner p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--serv-text);
+            margin: 0;
+        }
+
+        .section-title .tx-subTitle {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+        }
+        .section-title .sec_title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .book-service-section {
+            background: var(--serv-green);
+            position: relative;
+            overflow: hidden;
+        }
+        .book-service-section::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -150px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(231,254,184,0.03);
+            pointer-events: none;
+        }
+
+        .book-info .book-subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--serv-accent);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .book-info .book-heading {
+            font-size: 30px;
+            font-weight: 700;
+            color: var(--serv-cream);
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+        .book-info .book-desc {
+            font-size: 16px;
+            line-height: 1.7;
+            color: rgba(252,252,242,0.8);
+            margin-bottom: 24px;
+        }
+        .book-info .book-divider {
+            width: 60px;
+            height: 2px;
+            background: var(--serv-accent);
+            margin-bottom: 24px;
+            border-radius: 2px;
+        }
+        .book-info .book-contact-row {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+        .book-info .book-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .book-info .book-contact-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgba(231,254,184,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: var(--serv-accent);
+            flex-shrink: 0;
+        }
+        .book-info .book-contact-label {
+            display: block;
+            font-size: 12px;
+            color: rgba(252,252,242,0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        .book-info .book-contact-item a,
+        .book-info .book-contact-item p {
+            font-size: 14px;
+            color: var(--serv-cream);
+            margin: 0;
+        }
+        .book-info .book-contact-item a:hover {
+            color: var(--serv-accent);
+        }
+        .book-info .book-trust {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .book-info .book-trust span {
+            font-size: 13px;
+            color: rgba(252,252,242,0.6);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .book-info .book-trust span i {
+            color: var(--serv-accent);
+            font-size: 14px;
+        }
+
+        .book-form-wrap {
+            background: #fff;
+            border-radius: 16px;
+            padding: 36px 34px;
+            box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+        }
+        .book-form-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--serv-green);
+            margin-bottom: 20px;
+        }
+        .book-field input,
+        .book-field textarea,
+        .book-field select {
+            width: 100%;
+            border: 1px solid rgba(19,63,38,0.08);
+            border-radius: 10px;
+            padding: 13px 16px;
+            font-size: 14px;
+            color: var(--serv-text);
+            background: var(--serv-cream);
+            transition: all 0.3s ease;
+        }
+        .book-field input:focus,
+        .book-field textarea:focus,
+        .book-field select:focus {
+            outline: none;
+            border-color: var(--serv-green);
+            box-shadow: 0 0 0 3px rgba(231,254,184,0.15);
+        }
+        .book-field textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .book-field .nice-select {
+            width: 100% !important;
+            border: 1px solid rgba(19,63,38,0.08) !important;
+            border-radius: 10px !important;
+            background: var(--serv-cream) !important;
+        }
+        .book-field .nice-select .current {
+            font-size: 14px;
+            color: var(--serv-text);
+        }
+        .book-submit {
+            width: 100%;
+            justify-content: center;
+            padding: 14px 28px;
+            font-size: 15px;
+        }
+        .book-note {
+            font-size: 13px;
+            color: rgba(19,63,38,0.4);
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .why-section-about .why-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(19,63,38,0.04);
+        }
+        .why-section-about .why-item:last-child {
+            border-bottom: none;
+        }
+        .why-section-about .why-item .why-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(231,254,184,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--serv-green);
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        .why-section-about .why-item:hover .why-icon {
+            background: var(--serv-green);
+            color: var(--serv-cream);
+        }
+        .why-section-about .why-item h5 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--serv-green);
+            margin-bottom: 4px;
+        }
+        .why-section-about .why-item p {
+            font-size: 14px;
+            color: var(--serv-text);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding-custom { padding: 50px 0; }
+            .section-title .sec_title { font-size: 24px; }
+            .cta-banner h2 { font-size: 22px; }
+        }
+
+        .skel-wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skel-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(19,63,38,0.04);
+        }
+        .skel-logo {
+            width: 120px;
+            height: 32px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .skel-nav {
+            display: flex;
+            gap: 24px;
+            flex: 1;
+        }
+        .skel-hero {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            padding: 32px 0;
+        }
+        .skel-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .skel-block {
+            border-radius: 12px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .skel-block-lg {
+            width: 200px;
+            height: 180px;
+            flex-shrink: 0;
+        }
+        .skel-body {
+            display: flex;
+            gap: 24px;
+        }
+        .skel-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skel-card {
+            border-radius: 14px;
+            padding: 28px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+            min-height: 120px;
+        }
+        .skel-footer {
+            padding: 24px 0;
+            border-top: 1px solid rgba(19,63,38,0.04);
+        }
+        .skel-line {
+            height: 14px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .w-20 { width: 20%; }
+        .w-30 { width: 30%; }
+        .w-40 { width: 40%; }
+        .w-50 { width: 50%; }
+        .w-60 { width: 60%; }
+        .w-70 { width: 70%; }
+        .w-80 { width: 80%; }
+
+        @keyframes skel-shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .preloader {
+            align-items: flex-start;
+            padding: 40px 0;
+            background: var(--serv-cream);
+        }
+        .preloader .animation-preloader,
+        .preloader .loader {
+            display: none;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        h2, h4, h6 {
+            font-weight: 600;
+        }
+        .breadcrumb-wrapper h1 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+        }
+    </style>
+
+    </head>
+    <body>
+
+         <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="skel-wrap">
+                <div class="skel-header">
+                    <div class="skel-logo"></div>
+                    <div class="skel-nav">
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                    </div>
+                </div>
+                <div class="skel-hero">
+                    <div class="skel-block skel-block-lg"></div>
+                    <div class="skel-hero-content">
+                        <div class="skel-line w-40"></div>
+                        <div class="skel-line w-60"></div>
+                        <div class="skel-line w-30"></div>
+                    </div>
+                </div>
+                <div class="skel-body">
+                    <div class="skel-col">
+                        <div class="skel-card">
+                            <div class="skel-line w-30"></div>
+                            <div class="skel-line w-80"></div>
+                            <div class="skel-line w-50"></div>
+                        </div>
+                        <div class="skel-card">
+                            <div class="skel-line w-30"></div>
+                            <div class="skel-line w-80"></div>
+                            <div class="skel-line w-50"></div>
+                        </div>
+                    </div>
+                    <div class="skel-col">
+                        <div class="skel-card">
+                            <div class="skel-line w-40"></div>
+                            <div class="skel-line w-70"></div>
+                            <div class="skel-line w-60"></div>
+                        </div>
+                        <div class="skel-card">
+                            <div class="skel-line w-40"></div>
+                            <div class="skel-line w-70"></div>
+                            <div class="skel-line w-60"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skel-footer">
+                    <div class="skel-line w-50"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/black-logo.svg" alt="Dr. Sneha Rooh">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="offcanvas-title">Welcome.</h3>
+                        <p>Trauma-informed therapy and holistic healing <br> for grief, trauma, chronic illness and burnout.</p>
+                        <div class="mobile-menu fix mt-3"></div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="offcanvas__contact">
+                            <h3>Information</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span>Email:</span>
+                                    <a href="mailto:hello@drsneha.care">hello@drsneha.care</a>
+                                </li>
+                                <li>
+                                    <span>Sessions:</span>
+                                    Online Across India & Worldwide
+                                </li>
+                                <li>
+                                    <span>In-Person:</span>
+                                    By Appointment
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="theme-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book a Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Top Section Start -->
+         <div class="header-top-section">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <p>Dr. Sneha Rooh – Palliative Physician &amp; Integrative Psychotherapist <a href="contact.html">Book a Session</a>.</p>
+                    <ul class="top-list">
+                        <li><i class="fal fa-envelope"></i><a href="mailto:hello@drsneha.care">hello@drsneha.care</a></li>
+                        <li><i class="far fa-clock"></i><p>Online &amp; In-Person Sessions</p></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-section header-1">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <a href="index.html" class="header-logo1">
+                                <img src="assets/img/logo/black-logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li class="active"><a href="service.html">Services</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="header-contact-info">
+                                <a href="contact.html" class="theme-btn">
+                                    <i class="far fa-chevron-right"></i>
+                                    Book a Session
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fal fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PLACEHOLDER: Search bar and cart sidebar removed -->
+
+        <!-- Breadcrumb Section Start -->
+        <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/inner/breadcrumb-img.jpg');">
+            <div class="container">
+                <div class="page-heading">
+                   <div class="breadcrumb-items-area">
+                         <div class="breadcrumb-sub-title">
+                            <h1 class="text-white wow fadeInUp" data-wow-delay=".3s">Services</h1>
+                            <p class="text-white wow fadeInUp mt-2" data-wow-delay=".4s" style="font-size: 16px; opacity: 0.85; max-width: 500px;">Somatic Therapy &bull; Grief Care &bull; Reiki &bull; Constellation Work</p>
+                        </div>
+                        <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                            <li>
+                                <a href="index.html">
+                                Home
+                                </a>
+                            </li>
+                            <li>
+                                //
+                            </li>
+                            <li>
+                                Services
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Cards Section Start -->
+<section class="service-section-2 section-padding fix">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="subtitle tz-sub-tilte tz-sub-anim text-uppercase tx-subTitle">SERVICES</span>
+            <h2 class="tx-title sec_title tz-itm-title tz-itm-anim">Healing pathways tailored to your needs.</h2>
+            <p class="mt-3">Every offering is designed to support deeper healing, self-understanding and emotional wellbeing.</p>
+        </div>
+        <div class="row">
+            <!-- Service 1: Somatic Psychotherapy -->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp">
+                <div class="serv-card">
+                    <div class="serv-card-top">
+                        <div class="serv-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <div class="serv-cat">Psychotherapy</div>
+                    </div>
+                    <h3>Somatic Psychotherapy</h3>
+                    <p class="serv-sub">Reconnect with your body. Rebuild your sense of safety.</p>
+                    <p class="serv-body">Stress, trauma, grief and difficult experiences often live not only in the mind, but also in the body. Somatic Psychotherapy helps you understand and regulate your nervous system through body awareness, grounding and therapeutic reflection.</p>
+                    <div class="serv-tags">
+                        <span>Trauma</span><span>Anxiety</span><span>Burnout</span><span>Dissociation</span>
+                    </div>
+                    <div class="serv-foot">
+                        <span class="serv-fee">₹2,000 Online / ₹2,500 In-Person</span>
+                        <a href="#book-service" class="theme-btn small-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book This Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 2: Grief & Palliative Care -->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="serv-card">
+                    <div class="serv-card-top">
+                        <div class="serv-icon"><i class="fas fa-comments"></i></div>
+                        <div class="serv-cat">Palliative Care</div>
+                    </div>
+                    <h3>Grief &amp; Palliative Care Support</h3>
+                    <p class="serv-sub">Compassionate support through illness, loss and change.</p>
+                    <p class="serv-body">Whether you're living with a serious illness, caring for a loved one, or navigating grief after a loss, this space offers emotional and practical support with dignity and care.</p>
+                    <div class="serv-tags">
+                        <span>Bereavement</span><span>Caregiver Stress</span><span>Chronic Illness</span><span>End-of-Life</span>
+                    </div>
+                    <div class="serv-foot">
+                        <span class="serv-fee">₹2,000 Online / ₹2,500 In-Person</span>
+                        <a href="#book-service" class="theme-btn small-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book This Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 3: Family Constellation Therapy -->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="serv-card">
+                    <div class="serv-card-top">
+                        <div class="serv-icon"><i class="fas fa-sitemap"></i></div>
+                        <div class="serv-cat">Family Systems</div>
+                    </div>
+                    <h3>Family Constellation Therapy</h3>
+                    <p class="serv-sub">Understand the patterns that didn't begin with you.</p>
+                    <p class="serv-body">Family Constellation Therapy explores how family dynamics, inherited beliefs and intergenerational experiences may influence your relationships, emotions and life choices today.</p>
+                    <div class="serv-tags">
+                        <span>Relationship Challenges</span><span>Family Conflict</span><span>Chronic Guilt</span><span>Intergenerational Trauma</span>
+                    </div>
+                    <div class="serv-foot">
+                        <span class="serv-fee">₹2,000 Online / ₹2,500 In-Person</span>
+                        <a href="#book-service" class="theme-btn small-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book This Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 4: Reiki Healing -->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="serv-card">
+                    <div class="serv-card-top">
+                        <div class="serv-icon"><i class="fas fa-hand-sparkles"></i></div>
+                        <div class="serv-cat">Energy Healing</div>
+                    </div>
+                    <h3>Reiki Healing</h3>
+                    <p class="serv-sub">A gentle space for rest, balance and restoration.</p>
+                    <p class="serv-body">Reiki is a complementary energy healing practice that supports relaxation, emotional balance and nervous system regulation. Sessions are offered in a grounded, trauma-aware and consent-led environment.</p>
+                    <div class="serv-tags">
+                        <span>Stress</span><span>Fatigue</span><span>Grief</span><span>Burnout Recovery</span>
+                    </div>
+                    <div class="serv-foot">
+                        <span class="serv-fee">₹3,500 Per Session</span>
+                        <a href="#book-service" class="theme-btn small-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book This Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 5: Akashic Records Reading -->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                <div class="serv-card">
+                    <div class="serv-card-top">
+                        <div class="serv-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="serv-cat">Spiritual Insight</div>
+                    </div>
+                    <h3>Akashic Records Reading</h3>
+                    <p class="serv-sub">Explore deeper insight and self-understanding.</p>
+                    <p class="serv-body">Akashic Records Readings offer a reflective space to explore recurring life patterns, relationships, personal growth and spiritual questions with greater clarity and awareness.</p>
+                    <div class="serv-tags">
+                        <span>Life Transitions</span><span>Personal Growth</span><span>Relationship Patterns</span><span>Spiritual Exploration</span>
+                    </div>
+                    <div class="serv-foot">
+                        <span class="serv-fee">₹5,000 Per Session</span>
+                        <a href="#book-service" class="theme-btn small-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book This Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 6: Reiki Training -->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="serv-card">
+                    <div class="serv-card-top">
+                        <div class="serv-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="serv-cat">Training</div>
+                    </div>
+                    <h3>Reiki Training</h3>
+                    <p class="serv-sub">Learn Reiki for self-healing or professional practice.</p>
+                    <p class="serv-body">Trauma-aware Reiki training designed for individuals who wish to deepen their personal healing journey or integrate energy work into their professional practice.</p>
+                    <div class="serv-tags">
+                        <span>Level 1: ₹3,500</span><span>Level 2: ₹10,000</span>
+                    </div>
+                    <div class="serv-foot">
+                        <span class="serv-fee">Self-paced &amp; Guided</span>
+                        <a href="#book-service" class="theme-btn small-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book This Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 7: Corporate & Organisational Wellness -->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                <div class="serv-card">
+                    <div class="serv-card-top">
+                        <div class="serv-icon"><i class="fas fa-building"></i></div>
+                        <div class="serv-cat">Workplace Wellness</div>
+                    </div>
+                    <h3>Corporate &amp; Organisational Wellness</h3>
+                    <p class="serv-sub">Supporting healthier, more resilient workplaces.</p>
+                    <p class="serv-body">Interactive wellness programs, mental health talks and art-based workshops designed to reduce burnout, strengthen resilience and support emotional wellbeing in the workplace.</p>
+                    <div class="serv-tags">
+                        <span>Custom Pricing Available</span>
+                    </div>
+                    <div class="serv-foot">
+                        <span class="serv-fee">Tailored to Your Organisation</span>
+                        <a href="#book-service" class="theme-btn small-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book This Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+         <!-- Why Work With Dr. Sneha Section Start -->
+<section class="why-section-about section-padding-custom fix">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="hero-image-frame wow img-custom-anim-left" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                    <!-- PLACEHOLDER: Replace with Dr. Sneha's photo or therapy room -->
+                    <img src="assets/img/home-3/service/service-1.jpg" alt="Therapy session">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-subtitle wow fadeInUp" data-wow-delay=".1s" style="font-size: 14px; color: var(--serv-green); font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;">Why Work With Dr. Sneha</div>
+                <div class="wow fadeInUp" data-wow-delay=".2s">
+                    <h2 style="font-size: 30px; font-weight: 700; color: var(--serv-green); margin-bottom: 12px;">Therapy that honours every part of your experience.</h2>
+                </div>
+                <div class="mt-2">
+                    <div class="why-item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="why-icon"><i class="fas fa-user"></i></div>
+                        <div>
+                            <h5>Whole-Person Care</h5>
+                            <p>Supporting emotional, physical, relational and spiritual wellbeing as interconnected parts of you.</p>
+                        </div>
+                    </div>
+                    <div class="why-item wow fadeInUp" data-wow-delay=".35s">
+                        <div class="why-icon"><i class="fas fa-stethoscope"></i></div>
+                        <div>
+                            <h5>Medical + Psychological Expertise</h5>
+                            <p>A rare integration of clinical medicine and depth psychotherapy for truly holistic care.</p>
+                        </div>
+                    </div>
+                    <div class="why-item wow fadeInUp" data-wow-delay=".4s">
+                        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <h5>Trauma-Informed by Design</h5>
+                            <p>Safety, choice and dignity are not afterthoughts — they are built into every session from the ground up.</p>
+                        </div>
+                    </div>
+                    <div class="why-item wow fadeInUp" data-wow-delay=".45s">
+                        <div class="why-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <div>
+                            <h5>Inclusive &amp; Affirming</h5>
+                            <p>A welcoming space for LGBTQIA+, neurodivergent individuals and all diverse lived experiences.</p>
+                        </div>
+                    </div>
+                    <div class="why-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="why-icon"><i class="fas fa-leaf"></i></div>
+                        <div>
+                            <h5>Personalised Healing</h5>
+                            <p>No rigid protocols or one-size-fits-all approaches. Every session is tailored to your story, your pace and your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#book-service" class="theme-btn mt-4 wow fadeInUp" data-wow-delay=".6s">
+                    <i class="far fa-chevron-right"></i>
+                    Book a Session
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Book a Service Section Start -->
+        <section id="book-service" class="book-service-section section-padding fix">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="book-info wow fadeInUp" data-wow-delay=".2s">
+                            <span class="book-subtitle">TAKE THE NEXT STEP</span>
+                            <h2 class="book-heading">I'm here to listen —<br>whenever you're ready.</h2>
+                            <p class="book-desc">Whether you have a specific question or just want to feel your way forward, I welcome you to reach out. Every journey begins with a single conversation.</p>
+                            <div class="book-divider"></div>
+                            <div class="book-contact-row">
+                                <div class="book-contact-item">
+                                    <div class="book-contact-icon"><i class="far fa-envelope"></i></div>
+                                    <div>
+                                        <span class="book-contact-label">Email</span>
+                                        <a href="mailto:hello@drsneha.care">hello@drsneha.care</a>
+                                    </div>
+                                </div>
+                                <div class="book-contact-item">
+                                    <div class="book-contact-icon"><i class="far fa-globe"></i></div>
+                                    <div>
+                                        <span class="book-contact-label">Sessions</span>
+                                        <p>Online Across India &amp; Worldwide</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-trust">
+                                <span><i class="fas fa-check-circle"></i> Confidential &amp; trauma-informed</span>
+                                <span><i class="fas fa-check-circle"></i> LGBTQIA+ affirming space</span>
+                                <span><i class="fas fa-check-circle"></i> Free 15-min initial consultation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="book-form-wrap wow fadeInUp" data-wow-delay=".4s">
+                            <h3 class="book-form-title">I'd like to book a session.</h3>
+                            <form action="#">
+                                <div class="row g-3">
+                                    <div class="col-lg-6">
+                                        <div class="book-field">
+                                            <input type="text" name="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="book-field">
+                                            <input type="email" name="email" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="book-field">
+                                            <input type="text" name="phone" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="book-field">
+                                            <select class="single-select w-100">
+                                                <option>Select a service...</option>
+                                                <option>Somatic Psychotherapy</option>
+                                                <option>Grief &amp; Palliative Care</option>
+                                                <option>Family Constellation Therapy</option>
+                                                <option>Reiki Healing</option>
+                                                <option>Akashic Records Reading</option>
+                                                <option>Reiki Training</option>
+                                                <option>Corporate Wellness</option>
+                                                <option>Not Sure Yet</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="book-field">
+                                            <select class="single-select w-100">
+                                                <option>Online Session</option>
+                                                <option>In-Person Session</option>
+                                                <option>Not Sure Yet</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="book-field">
+                                            <textarea name="message" placeholder="Tell me a little about what brings you here..." rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="theme-btn book-submit">
+                                            <i class="far fa-chevron-right"></i>
+                                            REQUEST A SESSION
+                                        </button>
+                                        <p class="book-note">I typically respond within 24 hours.</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner Section Start -->
+        <section class="section-padding-custom fix" style="background: var(--serv-cream);">
+            <div class="container">
+                <div class="cta-banner wow fadeInUp" data-wow-delay=".2s">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h2>Ready to begin your healing journey?</h2>
+                            <p>Whether you are navigating grief, trauma, burnout, chronic illness, or simply seeking a deeper connection with yourself — you don't have to do it alone.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a href="contact.html" class="theme-btn">
+                                <i class="far fa-chevron-right"></i>
+                                BOOK A SESSION
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section Start -->
+        <footer class="footer-section section-bg-2 fix">
+            <div class="right-shape float-bob-x">
+                <img src="assets/img/home-1/footer/right-shape.png" alt="img">
+            </div>
+            <div class="top-shape float-bob-y">
+                <img src="assets/img/home-1/footer/top.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="footer-widget-wrapper">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <img src="assets/img/logo/white-logo.svg" alt="Dr. Sneha Rooh">
+                                </div>
+                                <div class="footer-content">
+                                    <h4 class="foot-title">Trauma-informed therapy and holistic healing for grief, trauma, chronic illness, burnout, and life's most difficult transitions.</h4>
+                                    <div class="social-icon d-flex align-items-center">
+                                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-6 ps-lg-5 col-sm-12 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                     <h3>Quick Links</h3>
+                                </div>
+                                <ul class="list-area">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 ps-xxl-5 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="footer-contect">
+                                        <li>
+                                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                                            <div class="content"><p><a href="mailto:hello@drsneha.care">hello@drsneha.care</a></p></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><i class="fas fa-globe"></i></div>
+                                            <div class="content"><p>Online Across India &amp; Worldwide</p></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                            <div class="content"><p>In-Person By Appointment</p></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="single-footer-widget style-bg-white">
+                                <div class="widget-head">
+                                    <h3>Services</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="list-area">
+                                        <li><a href="service.html">Somatic Psychotherapy</a></li>
+                                        <li><a href="service.html">Grief &amp; Palliative Care</a></li>
+                                        <li><a href="service.html">Family Constellation Therapy</a></li>
+                                        <li><a href="service.html">Reiki &amp; Energy Healing</a></li>
+                                        <li><a href="service.html">Akashic Records Reading</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-shape">
+                        <img src="assets/img/home-2/footer-shape.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-4 wow fadeInUp">
+                <div class="container">
+                    <div class="footer-bottom-wrapper">
+                        <p>&copy; 2025 Dr. Sneha Rooh. All rights reserved.</p>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Gsap Animation Js >>-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--<< ScrollTrigger Js >>-->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!--<< SplitText Js >>-->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!--<< splitType Js >>-->
+        <script src="assets/js/splitType.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

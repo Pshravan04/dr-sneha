@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dr. Sneha Rooh">
+        <meta name="description" content="Dr. Sneha Rooh - Palliative Physician, Integrative Psychotherapist & Somatic Therapist. Trauma-informed, queer-affirmative, neurodivergent-affirmative therapy and holistic healing.">
+        <!-- ======== Page title ============ -->
+        <title>Dr. Sneha Rooh | Palliative Physician & Integrative Psychotherapist</title>
+        <!--<< Favicon >>-->
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <!--<< Open Graph Tags >>-->
+        <meta property="og:title" content="Dr. Sneha Rooh | Palliative Physician &amp; Integrative Psychotherapist">
+        <meta property="og:description" content="Trauma-informed, queer-affirmative therapy and holistic healing for grief, trauma, chronic illness, burnout and life transitions.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://drsneha.care">
+        <meta property="og:image" content="assets/img/og-image.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Dr. Sneha Rooh | Palliative Physician &amp; Integrative Psychotherapist">
+        <meta name="twitter:description" content="Trauma-informed, queer-affirmative therapy and holistic healing.">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .problem-section {
+            position: relative;
+        }
+        .problem-section::before {
+            content: '\201C';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 180px;
+            line-height: 1;
+            font-family: Georgia, serif;
+            color: var(--theme-color);
+            opacity: 0.06;
+            pointer-events: none;
+        }
+        .problem-headline {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--header);
+            position: relative;
+            padding-bottom: 20px;
+        }
+        .problem-headline::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--black);
+            border-radius: 2px;
+        }
+        .problem-headline span {
+            color: var(--theme-color);
+            background: var(--black);
+            padding: 10px;
+            border-radius: 7px;
+        }
+        .problem-image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .problem-image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(231,254,184,0.15), rgba(231,254,184,0.1));
+            border-radius: 20px;
+        }
+        .problem-image-wrapper img {
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+        }
+        .problem-list-modern {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .problem-list-modern li {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #133F26;
+            border-bottom: 1px solid rgba(19,63,38,0.04);
+        }
+        .problem-list-modern li:last-child {
+            border-bottom: none;
+        }
+        .problem-list-modern li i {
+            color: var(--theme-color-2);
+            font-size: 14px;
+            margin-top: 5px;
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--black);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .problem-cta-box {
+            background: linear-gradient(135deg, var(--black), #133F26);
+            border-radius: 14px;
+            padding: 24px 28px;
+            color: var(--white);
+            margin-top: 24px;
+        }
+        .problem-cta-box p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: rgba(252,252,242,0.9);
+        }
+        .problem-cta-box strong {
+            color: var(--white);
+            font-size: 16px;
+        }
+        .problem-cta-box i {
+            color: var(--theme-color);
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .about-section-3 .about-frame {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .about-section-3 .about-frame::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 2px dashed rgba(231,254,184,0.2);
+            border-radius: 24px;
+            margin: -8px;
+            pointer-events: none;
+        }
+        .about-section-3 .about-frame img {
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+        }
+        .about-section-3 .about-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(231,254,184,0.08);
+            color: var(--black);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 6px 16px 6px 10px;
+            border-radius: 30px;
+            margin-bottom: 14px;
+        }
+        .about-section-3 .about-badge i {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--black);
+            color: var(--white);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        .about-section-3 .about-headline {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--header);
+            margin-bottom: 20px;
+        }
+        .about-section-3 .about-headline span {
+            color: var(--theme-color);
+            background: var(--black);
+            padding: 12px;
+            border-radius: 8px;
+        }
+        .about-section-3 .about-paragraph {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #133F26;
+            margin-bottom: 16px;
+        }
+        .about-section-3 .about-qualifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 24px 0 28px;
+        }
+        .about-section-3 .about-qualifications span {
+            background: var(--white);
+            border: 1px solid rgba(19,63,38,0.06);
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #133F26;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .about-section-3 .about-qualifications span i {
+            color: var(--black);
+            font-size: 10px;
+        }
+        .about-section-3 .about-qualifications span strong {
+            color: var(--header);
+        }
+
+        .why-work-section {
+            background: #FCFCF2;
+            position: relative;
+            overflow: hidden;
+        }
+        .why-work-section::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(231,254,184,0.04);
+            pointer-events: none;
+        }
+        .why-work-section::after {
+            content: '';
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(231,254,184,0.03);
+            pointer-events: none;
+        }
+        .why-work-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .why-work-image img {
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+        }
+        .why-work-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(231,254,184,0.2), rgba(231,254,184,0.1));
+            border-radius: 20px;
+        }
+        .why-work-image .floating-badge {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            background: var(--white);
+            border-radius: 12px;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 8px 24px rgba(19,63,38,0.15);
+            z-index: 2;
+        }
+        .why-work-image .floating-badge i {
+            font-size: 24px;
+            color: var(--theme-color);
+        }
+        .why-work-image .floating-badge h6 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+            color: var(--header);
+        }
+        .why-work-image .floating-badge p {
+            font-size: 12px;
+            margin: 0;
+            color: #133F26;
+        }
+        .why-work-section .section-subtitle-light {
+            font-size: 14px;
+            color: var(--black);
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .why-work-section .section-title-light h2 {
+            color: var(--header);
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .why-work-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(19,63,38,0.05);
+        }
+        .why-work-item:last-child {
+            border-bottom: none;
+        }
+        .why-work-item .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(231,254,184,0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--black);
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        .why-work-item:hover .icon-box {
+            background: var(--black);
+            color: var(--white);
+        }
+        .why-work-item h5 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--header);
+            margin-bottom: 4px;
+        }
+        .why-work-item p {
+            font-size: 14px;
+            color: #133F26;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .hero-main-desc {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #133F26;
+            padding-left: 20px;
+            border-left: 3px solid var(--black);
+            margin-top: 20px;
+        }
+        .hero-author-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            background: rgba(231,254,184,0.08);
+            border: 1px solid rgba(231,254,184,0.15);
+            border-radius: 12px;
+            padding: 14px 22px;
+            margin-top: 20px;
+        }
+        .hero-author-box .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(
+            --white);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        .hero-author-box .author-info strong {
+            display: block;
+            font-size: 15px;
+            color: var(--header);
+        }
+        .hero-author-box .author-info span {
+            font-size: 13px;
+            color: #133F26;
+            line-height: 1.4;
+        }
+        .hero-footer-tag {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-top: 20px;
+            padding: 16px 20px;
+            background: rgba(231,254,184,0.06);
+            border-radius: 12px;
+            border: 1px solid rgba(231,254,184,0.1);
+        }
+        .hero-footer-tag i {
+            color: var();
+            font-size: 16px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        .hero-footer-tag p {
+            font-size: 14px;
+            color: #133F26;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .trust-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 36px 28px 32px;
+            box-shadow: 0 8px 30px rgba(19, 63, 38, 0.06);
+            transition: all 0.4s ease;
+            text-align: center;
+            height: 100%;
+            border-bottom: 3px solid transparent;
+        }
+        .trust-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(231, 254, 184, 0.12);
+            border-bottom-color: var(--black);
+        }
+        .trust-card .icon-wrap {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+            color: var(--theme-color);
+            background: var(--black);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .trust-card .icon-wrap::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 2px dashed var(--theme-color);
+            opacity: 0.25;
+        }
+        .trust-card:hover .icon-wrap {
+            background: var(--black);
+        }
+        .trust-card:hover .icon-wrap::after {
+            border-color: var(--theme-color-2);
+        }
+        .trust-card h5 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--header);
+        }
+        .trust-card p {
+            font-size: 14px;
+            color: #133F26;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .section-subtitle {
+            font-size: 15px;
+            color: var(--black);
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .skel-wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skel-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(19,63,38,0.04);
+        }
+        .skel-logo {
+            width: 120px;
+            height: 32px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+            flex-shrink: 0;
+        }
+        .skel-nav {
+            display: flex;
+            gap: 24px;
+            flex: 1;
+        }
+        .skel-hero {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            padding: 32px 0;
+        }
+        .skel-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .skel-block {
+            border-radius: 12px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .skel-block-lg {
+            width: 200px;
+            height: 180px;
+            flex-shrink: 0;
+        }
+        .skel-body {
+            display: flex;
+            gap: 24px;
+        }
+        .skel-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skel-card {
+            border-radius: 14px;
+            padding: 28px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+            min-height: 120px;
+        }
+        .skel-footer {
+            padding: 24px 0;
+            border-top: 1px solid rgba(19,63,38,0.04);
+        }
+        .skel-line {
+            height: 14px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0e8dd 25%, #f0f5ee 50%, #e0e8dd 75%);
+            background-size: 200% 100%;
+            animation: skel-shimmer 1.5s ease infinite;
+        }
+        .w-20 { width: 20%; }
+        .w-30 { width: 30%; }
+        .w-40 { width: 40%; }
+        .w-50 { width: 50%; }
+        .w-60 { width: 60%; }
+        .w-70 { width: 70%; }
+        .w-80 { width: 80%; }
+
+        @keyframes skel-shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .preloader {
+            align-items: flex-start;
+            padding: 40px 0;
+            background: var(--body);
+        }
+        .preloader .animation-preloader,
+        .preloader .loader {
+            display: none;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        h2, h4, h6 {
+            font-weight: 600;
+        }
+        .hero-section h1 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+    <body>
+
+         <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="skel-wrap">
+                <div class="skel-header">
+                    <div class="skel-logo"></div>
+                    <div class="skel-nav">
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                        <div class="skel-line w-20"></div>
+                    </div>
+                </div>
+                <div class="skel-hero">
+                    <div class="skel-block skel-block-lg"></div>
+                    <div class="skel-hero-content">
+                        <div class="skel-line w-40"></div>
+                        <div class="skel-line w-60"></div>
+                        <div class="skel-line w-30"></div>
+                    </div>
+                </div>
+                <div class="skel-body">
+                    <div class="skel-col">
+                        <div class="skel-card"></div>
+                        <div class="skel-card"></div>
+                    </div>
+                    <div class="skel-col">
+                        <div class="skel-card"></div>
+                        <div class="skel-card"></div>
+                    </div>
+                </div>
+                <div class="skel-footer">
+                    <div class="skel-line w-50"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+
+            <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/black-logo.svg" alt="Dr. Sneha Rooh">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="offcanvas-title">Welcome.</h3>
+                        <p>Trauma-informed therapy and holistic healing <br> for grief, trauma, chronic illness and burnout.</p>
+                        <div class="mobile-menu fix mt-3"></div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="offcanvas__contact">
+                            <h3>Information</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span>
+                                        Email:
+                                    </span>
+                                    <a href="mailto:hello@drsneha.care">
+                                   hello@drsneha.care
+                                </a>
+                                </li>
+                                <li>
+                                    <span>
+                                        Sessions:
+                                    </span>
+                                    Online Across India & Worldwide
+                                </li>
+                                <li>
+                                    <span>
+                                        In-Person:
+                                    </span>
+                                    By Appointment
+                                </li>
+                            </ul>
+                        </div>
+                       <a href="contact.html" class="theme-btn">
+                            <i class="far fa-chevron-right"></i>
+                            Book a Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-section header-1 header-3">
+            <div class="container header-container-2">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <a href="index.html" class="header-logo1">
+                                <img src="assets/img/logo/black-logo.svg" alt="logo-img">
+                            </a>
+                             <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="active">
+                                                <a href="index.html">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="service.html">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="header-contact-info">
+                                <a href="contact.html" class="theme-btn">
+                                    <i class="far fa-chevron-right"></i>
+                                    Book a Session
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fal fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PLACEHOLDER: Search bar removed (not needed for this site) -->
+
+        <!-- Hero Section Start -->
+        <section class="hero-section hero-3 fix section-bg">
+            <div class="dot-shape">
+                <img src="assets/img/home-3/hero/shape-2.png" alt="img">
+            </div>
+            <div class="top-shape float-bob-y">
+                <img src="assets/img/home-3/hero/shape-1.png" alt="img">
+            </div>
+            <div class="bottom-shape float-bob-x">
+                <img src="assets/img/home-3/hero/shape-3.png" alt="img">
+            </div>
+            <div class="container-fluid">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <div class="star wow fadeInUp" data-wow-delay=".3s">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span><!-- PLACEHOLDER: Add rating/review text here --></span>
+                            </div>
+                            <h1 class="wow fadeInUp" data-wow-delay=".5s">
+                                You don't have to carry it all alone <span>anymore</span>.
+                            </h1>
+                            <p class="wow fadeInUp hero-main-desc" data-wow-delay=".3s">
+                                Trauma-informed therapy and holistic healing for grief, trauma, chronic illness, burnout, and life's most difficult transitions.
+                            </p>
+                            <div class="hero-author-box wow fadeInUp" data-wow-delay=".4s">
+                                <div class="author-avatar"><i class="fas fa-user-md"></i></div>
+                                <div class="author-info">
+                                    <strong>With Dr. Sneha Rooh</strong>
+                                    <span>Palliative Physician &bull; Integrative Psychotherapist &bull; Somatic Therapist</span>
+                                </div>
+                            </div>
+                            <div class="hero-footer-tag wow fadeInUp" data-wow-delay=".45s">
+                                <i class="fas fa-heart"></i>
+                                <p>A queer-affirmative, neurodivergent-affirmative and trauma-informed practice offering online and in-person support for individuals, caregivers, healthcare professionals and organisations.</p>
+                            </div>
+                            <div class="hero-button wow fadeInUp" data-wow-delay=".5s">
+                                <a href="contact.html" class="theme-btn">
+                                    <i class="far fa-chevron-right"></i>
+                                    BOOK YOUR FIRST SESSION
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <!-- PLACEHOLDER: Replace with Dr. Sneha's photo -->
+                            <img src="assets/img/home-3/hero/hero-1.png" alt="Dr. Sneha Rooh" class="wow img-custom-anim-right" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <div class="hero-image-2">
+                                <div class="group-image">
+                                <img src="assets/img/home-3/hero/group.png" alt="img">
+                            </div>
+                            <h6>
+                                Online & In-Person Sessions
+                            </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust / Why Clients Choose Dr. Sneha Section Start -->
+        <section class="section-padding" style="background: #FCFCF2;">
+            <div class="container">
+                <div class="section-title text-center wow fadeInUp mb-5">
+                    <p class="section-subtitle">Why Clients Choose</p>
+                    <h2 class="tx-title sec_title tz-itm-title tz-itm-anim">Dr. Sneha Rooh</h2>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="trust-card">
+                            <div class="icon-wrap">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h5>6+ Years of Clinical &amp; Therapeutic Experience</h5>
+                            <p>Extensive expertise in palliative care, somatic therapy, and integrative psychotherapy for complex needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="trust-card">
+                            <div class="icon-wrap">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h5>Trauma-Informed Care</h5>
+                            <p>Every session is grounded in safety, trust, and an understanding of how trauma shapes the mind and body.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="trust-card">
+                            <div class="icon-wrap">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <h5>Queer-Affirmative &amp; Neurodivergent-Affirmative Practice</h5>
+                            <p>A safe, respectful space for LGBTQIA+ and neurodivergent individuals — you are welcome as you are.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="trust-card">
+                            <div class="icon-wrap">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <h5>Online &amp; In-Person Sessions</h5>
+                            <p>Flexible therapy options to suit your lifestyle — connect from anywhere or meet in person.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="trust-card">
+                            <div class="icon-wrap">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h5>Integrative Approach Rooted in Medicine &amp; Psychotherapy</h5>
+                            <p>Bridging the gap between medical knowledge and therapeutic healing for whole-person wellness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section: "Sometimes the hardest struggles..." Start -->
+        <section class="problem-section section-padding fix" style="background: #FCFCF2;">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="problem-image-wrapper wow img-custom-anim-left" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <!-- PLACEHOLDER: Replace with relevant image -->
+                            <img src="assets/img/home-3/about/about-1.jpg" alt="Healing journey">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="problem-content">
+                            <p class="section-subtitle wow fadeInUp" data-wow-delay=".1s">The Struggles You Carry</p>
+                            <h2 class="problem-headline wow fadeInUp" data-wow-delay=".2s">
+                                Sometimes the hardest <span>struggles</span> are the ones no one else can see.
+                            </h2>
+                            <p class="mt-4 mb-3 wow fadeInUp" data-wow-delay=".3s" style="font-size: 17px; color: #133F26; font-weight: 500;">
+                                You may be living with:
+                            </p>
+                            <ul class="problem-list-modern wow fadeInUp" data-wow-delay=".4s">
+                                <li><i class="fas fa-check"></i> Anxiety that never fully settles</li>
+                                <li><i class="fas fa-check"></i> Grief after loss, illness or major life change</li>
+                                <li><i class="fas fa-check"></i> Burnout from constantly caring for others</li>
+                                <li><i class="fas fa-check"></i> Trauma that still lives in the body</li>
+                                <li><i class="fas fa-check"></i> Chronic illness and emotional exhaustion</li>
+                                <li><i class="fas fa-check"></i> Relationship difficulties and family wounds</li>
+                                <li><i class="fas fa-check"></i> Questions about identity, meaning and belonging</li>
+                            </ul>
+                            <div class="problem-cta-box wow fadeInUp" data-wow-delay=".5s">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-quote-left"></i>
+                                    <div>
+                                        <p><strong>You don't have to figure it all out before reaching out.</strong></p>
+                                        <p style="margin-top: 4px;">Healing begins by being met exactly where you are.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section: Dr. Sneha Bio Start -->
+        <section class="about-section-3 section-padding fix">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-frame wow img-custom-anim-left" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <!-- PLACEHOLDER: Replace with Dr. Sneha's photo -->
+                            <img src="assets/img/home-3/about/about-1.jpg" alt="Dr. Sneha Rooh">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="about-badge wow fadeInUp" data-wow-delay=".1s">
+                                <i class="fas fa-user-md"></i>
+                                ABOUT DR. SNEHA
+                            </div>
+                            <h2 class="about-headline wow fadeInUp" data-wow-delay=".2s">
+                                Healing happens when <span>expertise</span> meets genuine human presence.
+                            </h2>
+                            <div class="about-qualifications wow fadeInUp" data-wow-delay=".25s">
+                                <span><i class="fas fa-circle"></i> <strong>Palliative Physician</strong></span>
+                                <span><i class="fas fa-circle"></i> <strong>Integrative Psychotherapist</strong></span>
+                                <span><i class="fas fa-circle"></i> <strong>Somatic Therapist</strong></span>
+                            </div>
+                            <p class="about-paragraph wow fadeInUp" data-wow-delay=".3s">
+                                Dr. Sneha Rooh's work bridges medicine, psychology, somatic healing, creative therapies and energy work. Her approach is grounded in trauma-informed, feminist and decolonial psychology — supporting clients not only in reducing symptoms but in rebuilding safety, meaning, resilience and connection.
+                            </p>
+                            <p class="about-paragraph wow fadeInUp" data-wow-delay=".35s">
+                                Every session is personalised, consent-led and paced according to your unique needs.
+                            </p>
+                            <div class="about-button wow fadeInUp" data-wow-delay=".4s">
+                                <a href="about.html" class="theme-btn">
+                                    <i class="far fa-chevron-right"></i>
+                                    MEET DR. SNEHA
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview Section Start -->
+        <section class="service-section-3 section-padding fix theme-bg">
+            <div class="shape-1">
+                <img src="assets/img/home-3/service/shape-1.png" alt="img">
+            </div>
+            <div class="shape-2">
+                <img src="assets/img/home-3/service/shape-2.png" alt="img">
+            </div>
+            <div class="shape-3">
+                <img src="assets/img/home-3/service/shape-3.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="section-title style-3 text-center wow fadeInUp">
+                    <span class="subtitle tz-sub-tilte tz-sub-anim text-uppercase tx-subTitle">SERVICES</span>
+                    <h2 class="text-white tx-title sec_title tz-itm-title tz-itm-anim">Care designed around your <br>unique journey.</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="service-card-items-3">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <div class="icon">
+                                        <i class="flaticon-healthcare"></i>
+                                    </div>
+                                    <h5>Somatic Psychotherapy</h5>
+                                </div>
+                                <p>Heal trauma, anxiety, burnout and nervous system overwhelm through body-centred therapy.</p>
+                                <p class="service-fee"><strong>Fee:</strong> ₹2,000 Online | ₹2,500 In-Person</p>
+                                <a href="service.html" class="theme-btn style-2">
+                                    <i class="far fa-chevron-right"></i>
+                                    Learn More
+                                </a>
+                            </div>
+                            <div class="service-image">
+                                <!-- PLACEHOLDER: Replace service image -->
+                                <img src="assets/img/home-3/service/service-1.jpg" alt="Somatic Psychotherapy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="service-card-items-3">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <div class="icon">
+                                        <i class="flaticon-blood-transfusion"></i>
+                                    </div>
+                                    <h5>Grief & Palliative Care</h5>
+                                </div>
+                                <p>Compassionate support for serious illness, anticipatory grief, bereavement and caregiving.</p>
+                                <p class="service-fee"><strong>Fee:</strong> ₹2,000 Online | ₹2,500 In-Person</p>
+                                <a href="service.html" class="theme-btn style-2">
+                                    <i class="far fa-chevron-right"></i>
+                                    Learn More
+                                </a>
+                            </div>
+                            <div class="service-image">
+                                <!-- PLACEHOLDER: Replace service image -->
+                                <img src="assets/img/home-3/service/service-3.jpg" alt="Grief & Palliative Care">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="service-card-items-3 style-2">
+                            <div class="service-image">
+                                <!-- PLACEHOLDER: Replace service image -->
+                                <img src="assets/img/home-3/service/service-2.jpg" alt="Family Constellation Therapy">
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <div class="icon">
+                                        <i class="flaticon-medicine"></i>
+                                    </div>
+                                    <h5>Family Constellation Therapy</h5>
+                                </div>
+                                <p>Explore inherited patterns, family dynamics and intergenerational trauma.</p>
+                                <p class="service-fee"><strong>Fee:</strong> ₹2,000 Online | ₹2,500 In-Person</p>
+                                <a href="service.html" class="theme-btn style-2">
+                                    <i class="far fa-chevron-right"></i>
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="service-card-items-3">
+                            <div class="service-image">
+                                <!-- PLACEHOLDER: Replace service image -->
+                                <img src="assets/img/home-3/service/service-4.jpg" alt="Reiki & Energy Healing">
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <div class="icon">
+                                        <i class="flaticon-talk"></i>
+                                    </div>
+                                    <h5>Reiki & Energy Healing</h5>
+                                </div>
+                                <p>Restore balance, regulation and emotional wellbeing through gentle energy work.</p>
+                                <p class="service-fee"><strong>Fee:</strong> ₹3,500 Per Session</p>
+                                <a href="service.html" class="theme-btn style-2">
+                                    <i class="far fa-chevron-right"></i>
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="service-card-items-3">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <div class="icon">
+                                        <i class="flaticon-stethoscope"></i>
+                                    </div>
+                                    <h5>Akashic Records Reading</h5>
+                                </div>
+                                <p>Gain deeper insight into recurring patterns, purpose and personal growth.</p>
+                                <p class="service-fee"><strong>Fee:</strong> ₹5,000 Per Session</p>
+                                <a href="service.html" class="theme-btn style-2">
+                                    <i class="far fa-chevron-right"></i>
+                                    Learn More
+                                </a>
+                            </div>
+                            <div class="service-image">
+                                <!-- PLACEHOLDER: Replace service image -->
+                                <img src="assets/img/home-3/service/service-1.jpg" alt="Akashic Records Reading">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5 wow fadeInUp">
+                    <a href="service.html" class="theme-btn">
+                        <i class="far fa-chevron-right"></i>
+                        VIEW ALL SERVICES
+                    </a>
+                </div>
+            </div>
+        </section>
+
+<!-- PLACEHOLDER: Marquee section removed -->
+
+        <!-- Why Work With Dr. Sneha Section Start -->
+        <section class="section-padding why-work-section">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="why-work-image wow img-custom-anim-left" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <!-- PLACEHOLDER: Replace with Dr. Sneha's photo or a therapy room image -->
+                            <img src="assets/img/home-3/choose-us/choose-1.jpg" alt="Therapy session">
+                            <div class="floating-badge">
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <h6>Trauma-Informed</h6>
+                                    <p>Care by design, not by label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="section-subtitle-light wow fadeInUp" data-wow-delay=".1s">Why Work With Dr. Sneha</div>
+                        <div class="section-title-light wow fadeInUp" data-wow-delay=".2s">
+                            <h2>Therapy that honours every part of your experience.</h2>
+                        </div>
+                        <div class="mt-4">
+                            <div class="why-work-item wow fadeInUp" data-wow-delay=".3s">
+                                <div class="icon-box"><i class="fas fa-user"></i></div>
+                                <div>
+                                    <h5>Whole-Person Care</h5>
+                                    <p>Supporting emotional, physical, relational and spiritual wellbeing.</p>
+                                </div>
+                            </div>
+                            <div class="why-work-item wow fadeInUp" data-wow-delay=".35s">
+                                <div class="icon-box"><i class="fas fa-stethoscope"></i></div>
+                                <div>
+                                    <h5>Medical + Psychological Expertise</h5>
+                                    <p>A rare integration of clinical medicine and depth psychotherapy.</p>
+                                </div>
+                            </div>
+                            <div class="why-work-item wow fadeInUp" data-wow-delay=".4s">
+                                <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                                <div>
+                                    <h5>Trauma-Informed by Design</h5>
+                                    <p>Every session prioritises safety, choice and dignity.</p>
+                                </div>
+                            </div>
+                            <div class="why-work-item wow fadeInUp" data-wow-delay=".45s">
+                                <div class="icon-box"><i class="fas fa-hand-holding-heart"></i></div>
+                                <div>
+                                    <h5>Inclusive &amp; Affirming</h5>
+                                    <p>A welcoming space for LGBTQIA+, neurodivergent individuals and diverse lived experiences.</p>
+                                </div>
+                            </div>
+                            <div class="why-work-item wow fadeInUp" data-wow-delay=".5s">
+                                <div class="icon-box"><i class="fas fa-leaf"></i></div>
+                                <div>
+                                    <h5>Personalised Healing</h5>
+                                    <p>No rigid formulas. Care is tailored to your story and pace.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- PLACEHOLDER: Project section removed -->
+
+        <!-- Testimonial Section3 Start -->
+        <section class="testimonial-section-3 section-padding fix">
+            <div class="shape-1 float-bob-y">
+                <img src="assets/img/home-3/testimonial/shape-1.png" alt="img">
+            </div>
+            <div class="shape-2 float-bob-y">
+                <img src="assets/img/home-3/testimonial/shape-4.png" alt="img">
+            </div>
+            <div class="shape-3 float-bob-y">
+                <img src="assets/img/home-3/testimonial/shape-2.png" alt="img">
+            </div>
+             <div class="shape-4 float-bob-y">
+                <img src="assets/img/home-3/testimonial/shape-3.png" alt="img">
+            </div>
+            <div class="shape-5 float-bob-x">
+                <img src="assets/img/home-3/testimonial/shape-5.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="subtitle tz-sub-tilte tz-sub-anim text-uppercase tx-subTitle">TESTIMONIALS</span>
+                    <h2 class="tx-title sec_title tz-itm-title tz-itm-anim">
+                        Stories of healing, resilience <br>and transformation.
+                    </h2>
+                </div>
+                <div class="testimonial-wrapper-3">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="testimonial-card-items-3">
+                                <div class="testimonial-image">
+                                <img src="assets/img/home-3/testimonial/01.jpg" alt="img">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="testimonial-card-items-3 style-2">
+                                <div class="testimonial-image">
+                                <img src="assets/img/home-3/testimonial/02.jpg" alt="img">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="testimonial-card-items-3 style-3">
+                                <div class="testimonial-image">
+                                <img src="assets/img/home-3/testimonial/03.jpg" alt="img">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="testimonial-card-items-3">
+                                <div class="testimonial-image">
+                                <img src="assets/img/home-3/testimonial/04.jpg" alt="img">
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="testimonial-box-item-3">
+                                <div class="swiper testimonial-slider-3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-content">
+                                                <div class="star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p>
+                                                    “ I am writing on behalf of my brother who was a patient in your hospital. I would like to thank you on behalf of my entire family for the help and consideration for my patietn.”
+                                                </p>
+                                                <h5>
+                                                    John Smith
+                                                </h5>
+                                                <span>
+                                                    Small Business Owner
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-content">
+                                                <div class="star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p>
+                                                    “ I am writing on behalf of my brother who was a patient in your hospital. I would like to thank you on behalf of my entire family for the help and consideration for my patietn.”
+                                                </p>
+                                                <h5>
+                                                    John Smith
+                                                </h5>
+                                                <span>
+                                                    Small Business Owner
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-content">
+                                                <div class="star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p>
+                                                    “ I am writing on behalf of my brother who was a patient in your hospital. I would like to thank you on behalf of my entire family for the help and consideration for my patietn.”
+                                                </p>
+                                                <h5>
+                                                    John Smith
+                                                </h5>
+                                                <span>
+                                                    Small Business Owner
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="array-button-2">
+                        <button class="array-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="array-next"><i class="fas fa-chevron-right"></i></button>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Section Start -->
+        <div class="brand-section section-padding pt-0 fix">
+                <div class="container">
+                    <div class="swiper brand-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="barnd-image text-center">
+                                    <img src="assets/img/home-1/brand/01.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="barnd-image text-center">
+                                    <img src="assets/img/home-1/brand/02.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="barnd-image text-center">
+                                    <img src="assets/img/home-1/brand/03.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="barnd-image text-center">
+                                    <img src="assets/img/home-1/brand/04.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="barnd-image text-center">
+                                    <img src="assets/img/home-1/brand/05.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="barnd-image text-center">
+                                    <img src="assets/img/home-1/brand/06.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Video-Play Section3 Start -->
+        <div class="video-play-section fix bg-cover" style="background-image: url(assets/img/home-3/video.jpg);">
+            <div class="container">
+                <div class="video-wrapper">
+                    <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup ripple">
+                      <i class="fas fa-play"></i>
+                   </a>
+                </div>
+            </div>
+        </div>
+
+<!-- PLACEHOLDER: Team section removed -->
+
+<!-- PLACEHOLDER: Process section removed -->
+
+<!-- PLACEHOLDER: Counter section removed -->
+
+<!-- PLACEHOLDER: Project gallery section removed -->
+
+        <!-- Faq Section3 Start -->
+        <section class="faq-section-3 section-padding pt-0 fix">
+            <div class="container">
+                <div class="faq-wrapper-3">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="faq-content">
+                                <div class="section-title mb-0">
+                                    <span class="subtitle tz-sub-tilte tz-sub-anim  text-uppercase tx-subTitle">OUR FAQS</span>
+                                    <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
+                                        Frequently Asked Questions About Us
+                                    </h2>
+                                </div>
+                                <p class="text wow fadeInUp" data-wow-delay=".5s">
+                                    Your brand deserves more than just attention—it deserves results. That’s why we offer end-to-end creative services that help you engage your audience.
+                                </p>
+                                <div class="faq-box-item wow fadeInUp" data-wow-delay=".7s">
+                                    <div class="icon">
+                                        <img src="assets/img/home-3/icon/06.svg" alt="img">
+                                    </div>
+                                    <ul class="list">
+                                        <li>
+                                            <a href="tel:+12029838994">+12 029 838 994</a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:helloflybed@gmail.com">helloflybed@gmail.com</a> 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="faq-items">
+                                <div class="faq-accordion">
+                                    <div class="accordion" id="accordion">
+                                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".2s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                                    What services do you offer at your facility?
+                                                </button>
+                                            </h5>
+                                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Explore our partnership with SummitEdge, navigating complex regulations, and enabling expansion.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".4s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                                    Do I need an appointment before visiting?
+                                                </button>
+                                            </h5>
+                                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Explore our partnership with SummitEdge, navigating complex regulations, and enabling expansion.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".6s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                                    Do you accept health insurance?
+                                                </button>
+                                            </h5>
+                                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Explore our partnership with SummitEdge, navigating complex regulations, and enabling expansion.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".8s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                                    Do you accept health insurance?
+                                                </button>
+                                            </h5>
+                                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Explore our partnership with SummitEdge, navigating complex regulations, and enabling expansion.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".9s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq7" aria-expanded="true" aria-controls="faq7">
+                                                    Who can benefit from your consulting services?
+                                                </button>
+                                            </h5>
+                                            <div id="faq7" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Explore our partnership with SummitEdge, navigating complex regulations, and enabling expansion.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<!-- PLACEHOLDER: News/Blog section removed -->
+       
+        <!-- Final CTA Section Start -->
+        <section class="contact-section-3 section-padding fix theme-bg-2">
+            <div class="shape-1 float-bob-y">
+                <img src="assets/img/home-3/shape-1.png" alt="img">
+            </div>
+            <div class="shape-2 float-bob-y">
+                <img src="assets/img/home-3/shape-2.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="section-title bg-color text-center">
+                            <h2 class="text-white tx-title sec_title tz-itm-title tz-itm-anim">
+                                You don't need to wait until things <br>become unbearable.
+                            </h2>
+                            <h3 class="text-white mt-3" style="font-size: 1.6rem;">Support is available.</h3>
+                            <p class="text-white mt-3" style="font-size: 1.15rem;">Let's begin with one conversation.</p>
+                        </div>
+                        <div class="mt-4 wow fadeInUp" data-wow-delay=".5s">
+                            <a href="contact.html" class="theme-btn" style="font-size: 1.1rem; padding: 16px 40px;">
+                                <i class="far fa-chevron-right"></i>
+                                BOOK YOUR FIRST SESSION
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section Start -->
+        <footer class="footer-section section-bg-2 fix">
+            <div class="right-shape float-bob-x">
+                <img src="assets/img/home-1/footer/right-shape.png" alt="img">
+            </div>
+            <div class="top-shape float-bob-y">
+                <img src="assets/img/home-1/footer/top.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="footer-widget-wrapper">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <!-- PLACEHOLDER: Replace with Dr. Sneha's logo -->
+                                    <img src="assets/img/logo/white-logo.svg" alt="Dr. Sneha Rooh">
+                                </div>
+                                <div class="footer-content">
+                                    <h4 class="foot-title">Trauma-informed therapy and holistic healing for grief, trauma, chronic illness, burnout, and life's most difficult transitions.</h4>
+                                    <div class="social-icon d-flex align-items-center">
+                                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-6 ps-lg-5 col-sm-12 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                     <h3>Quick Links</h3>
+                                </div>
+                                <ul class="list-area">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 ps-xxl-5 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="footer-contect">
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p><a href="mailto:hello@drsneha.care">hello@drsneha.care</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                            <i class="fas fa-globe"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Online Across India &amp; Worldwide</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>In-Person By Appointment</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="single-footer-widget style-bg-white">
+                                <div class="widget-head">
+                                    <h3>Services</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="list-area">
+                                        <li><a href="service.html">Somatic Psychotherapy</a></li>
+                                        <li><a href="service.html">Grief &amp; Palliative Care</a></li>
+                                        <li><a href="service.html">Family Constellation Therapy</a></li>
+                                        <li><a href="service.html">Reiki &amp; Energy Healing</a></li>
+                                        <li><a href="service.html">Akashic Records Reading</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-shape">
+                        <img src="assets/img/home-2/footer-shape.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-4 wow fadeInUp">
+                <div class="container">
+                    <div class="footer-bottom-wrapper">
+                        <p>&copy; 2025 Dr. Sneha Rooh. All rights reserved.</p>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Gsap Animation Js >>-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--<< ScrollTrigger Js >>-->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!--<< SplitText Js >>-->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!--<< splitType Js >>-->
+        <script src="assets/js/splitType.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
