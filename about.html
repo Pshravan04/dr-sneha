@@ -125,7 +125,7 @@
         }
         .about-hero .qual-badges span {
             background: var(--about-cream);
-            border: 1px solid rgba(19,63,38,0.08);
+            border: 1px solid rgb(19 63 38 / 49%);
             border-radius: 8px;
             padding: 8px 16px;
             font-size: 13px;
@@ -265,8 +265,8 @@
             background: var(--about-cream);
         }
         .quals-section .qual-card {
-            background: var(--about-cream);
-            border: 1px solid rgba(19,63,38,0.06);
+            background: var(--white);
+            border: 1px solid rgb(19 63 38 / 96%);
             border-radius: 14px;
             padding: 28px 24px;
             height: 100%;
@@ -309,7 +309,7 @@
             padding: 32px 28px;
             height: 100%;
             box-shadow: 0 8px 28px rgba(19,63,38,0.04);
-            border: 1px solid rgba(231,254,184,0.12);
+            border: 1px solid #133f2663;
             transition: all 0.3s ease;
         }
         .modalities-grid .mod-card:hover {
@@ -635,6 +635,51 @@
         img {
             max-width: 100%;
             height: auto;
+        }
+        .theme-btn:not(.small-btn):not(.book-submit):not(.submit-btn) {
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+            padding-left: 5px !important;
+            padding-right: 30px !important;
+        }
+        .theme-btn:not(.small-btn):not(.book-submit):not(.submit-btn):hover {
+            background: var(--header) !important;
+            background-color: var(--header) !important;
+            color: var(--white) !important;
+        }
+        .theme-btn:not(.small-btn):not(.book-submit):not(.submit-btn) i {
+            flex-shrink: 0;
+            margin-right: 0 !important;
+            position: relative;
+            z-index: 2;
+            transition: transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1), rotate 0.5s ease;
+            will-change: transform;
+        }
+        .theme-btn:not(.small-btn):not(.book-submit):not(.submit-btn):hover i {
+            background-color: var(--theme-color) !important;
+            color: var(--black) !important;
+            transform: translateX(var(--slide-dist, 140px)) rotate(20deg);
+        }
+        .theme-btn:not(.small-btn):not(.book-submit):not(.submit-btn) .btn-text {
+            display: inline-block;
+            transition: transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .theme-btn:not(.small-btn):not(.book-submit):not(.submit-btn):hover .btn-text {
+            transform: translateX(-33px);
+        }
+        .theme-btn:not(.small-btn):not(.book-submit):not(.submit-btn).btn-clicked {
+            transform: scale(0.97);
+            transition: transform 0.15s ease;
+        }
+        .footer-widget-wrapper .single-footer-widget .footer-contect li .content p,
+        .footer-widget-wrapper .single-footer-widget .footer-contect li .content p a {
+            color: #E7FEB8 !important;
+        }
+        .footer-widget-wrapper .single-footer-widget.style-bg-white ul li a {
+            color: #133F26 !important;
         }
         @media (max-width: 768px) {
             .breadcrumb-wrapper h1 { font-size: 28px; }
@@ -1162,34 +1207,16 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- Footer Section Start -->
-        <footer class="footer-section section-bg-2 fix">
-            <div class="right-shape float-bob-x">
-                <img src="assets/img/home-1/footer/right-shape.png" alt="img">
-            </div>
-            <div class="top-shape float-bob-y">
-                <img src="assets/img/home-1/footer/top.png" alt="img">
-            </div>
+     <footer class="footer-section section-bg-2 fix">
+
             <div class="container">
                 <div class="footer-widget-wrapper">
                     <div class="row">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
+                                    <!-- PLACEHOLDER: Replace with Dr. Sneha's logo -->
                                     <img src="assets/img/logo/white-logo.svg" alt="Dr. Sneha Rooh">
                                 </div>
                                 <div class="footer-content">
@@ -1205,34 +1232,54 @@
                         <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-6 ps-lg-5 col-sm-12 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                     <h3>Quick Links</h3>
+                                     <h3 style="color: var(--theme-color);">Quick Links</h3>
                                 </div>
                                 <ul class="list-area">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li>
+                                        <a href="index.html" style="color: var(--theme-color);">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html" style="color: var(--theme-color);">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" style="color: var(--theme-color);">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" style="color: var(--theme-color);">Contact</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 ps-xxl-5 wow fadeInUp" data-wow-delay=".6s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Contact</h3>
+                                    <h3 style="color: var(--theme-color);">Contact</h3>
                                 </div>
                                 <div class="footer-content">
                                     <ul class="footer-contect">
                                         <li>
-                                            <div class="icon"><i class="fas fa-envelope"></i></div>
-                                            <div class="content"><p><a href="mailto:hello@drsneha.care">hello@drsneha.care</a></p></div>
+                                            <div class="icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p style="color: #E7FEB8 !important;"><a href="mailto:hello@drsneha.care" style="color: #E7FEB8 !important;">hello@drsneha.care</a></p>
+                                            </div>
                                         </li>
                                         <li>
-                                            <div class="icon"><i class="fas fa-globe"></i></div>
-                                            <div class="content"><p>Online Across India &amp; Worldwide</p></div>
+                                            <div class="icon">
+                                            <i class="fas fa-globe"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p style="color: #E7FEB8 !important;">Online Across India &amp; Worldwide</p>
+                                            </div>
                                         </li>
                                         <li>
-                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                                            <div class="content"><p>In-Person By Appointment</p></div>
+                                            <div class="icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p style="color: #E7FEB8 !important;">In-Person By Appointment</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -1245,19 +1292,17 @@
                                 </div>
                                 <div class="footer-content">
                                     <ul class="list-area">
-                                        <li><a href="service.html">Somatic Psychotherapy</a></li>
-                                        <li><a href="service.html">Grief &amp; Palliative Care</a></li>
-                                        <li><a href="service.html">Family Constellation Therapy</a></li>
-                                        <li><a href="service.html">Reiki &amp; Energy Healing</a></li>
-                                        <li><a href="service.html">Akashic Records Reading</a></li>
+                                        <li><a href="service.html" style="color: #133F26 !important;">Somatic Psychotherapy</a></li>
+                                        <li><a href="service.html" style="color: #133F26 !important;">Grief &amp; Palliative Care</a></li>
+                                        <li><a href="service.html" style="color: #133F26 !important;">Family Constellation Therapy</a></li>
+                                        <li><a href="service.html" style="color: #133F26 !important;">Reiki &amp; Energy Healing</a></li>
+                                        <li><a href="service.html" style="color: #133F26 !important;">Akashic Records Reading</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="footer-shape">
-                        <img src="assets/img/home-2/footer-shape.png" alt="img">
-                    </div>
+
                 </div>
             </div>
             <div class="footer-bottom mt-4 wow fadeInUp">
@@ -1302,5 +1347,43 @@
         <script src="assets/js/splitType.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
-    </body>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
 </html>

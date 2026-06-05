@@ -61,6 +61,30 @@
 
 
 
+        //>> CTA Button Animation Setup <<//
+        document.querySelectorAll('.theme-btn:not(.small-btn):not(.book-submit):not(.submit-btn)').forEach(function(btn) {
+            if (btn.querySelector('i')) {
+                btn.querySelectorAll('.btn-text').forEach(function(s) { s.remove(); });
+                var textNodes = [];
+                btn.childNodes.forEach(function(node) {
+                    if (node.nodeType === 3 && node.textContent.trim()) {
+                        var span = document.createElement('span');
+                        span.className = 'btn-text';
+                        span.textContent = node.textContent;
+                        textNodes.push({ old: node, span: span });
+                    }
+                });
+                textNodes.forEach(function(item) {
+                    item.old.replaceWith(item.span);
+                });
+                btn.style.setProperty('--slide-dist', Math.round(btn.offsetWidth - 60) + 'px');
+                btn.addEventListener('click', function(e) {
+                    btn.classList.add('btn-clicked');
+                    setTimeout(function() { btn.classList.remove('btn-clicked'); }, 300);
+                });
+            }
+        });
+
         //>> Wow Animation Start <<//
         if (window.innerWidth < 768) {
             document.querySelectorAll('[data-wow-delay]').forEach(function(el) {
