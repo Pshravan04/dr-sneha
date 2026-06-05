@@ -102,7 +102,7 @@ h6 {
 
 h1 {
   font-size: 68px;
-  line-height: 122%;
+  /* line-height: 122%; */
 }
 
 @media (max-width: 1399px) {
@@ -3388,10 +3388,10 @@ button {
 
 .hero-3 .hero-content h1 {
   font-size: 92px;
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #133F26;
-  margin-bottom: 20px;
-  letter-spacing: -2.76px;
+  /* margin-bottom: 20px; */
+  /* letter-spacing: -2.76px; */
   font-family: "Satoshi", sans-serif;
 }
 
@@ -15843,7 +15843,7 @@ p.sticky-label {
 
 .footer-widget-wrapper .single-footer-widget .widget-head h3 {
   font-size: 20px;
-  color: var(--white);
+  color: var(--black);
   font-weight: 500;
 }
 
@@ -15857,7 +15857,7 @@ p.sticky-label {
 }
 
 .footer-widget-wrapper .single-footer-widget .list-area li a {
-  color: var(--white);
+  color: var(--black);
   position: relative;
 }
 
