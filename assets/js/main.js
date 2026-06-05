@@ -62,6 +62,14 @@
 
 
         //>> Wow Animation Start <<//
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('[data-wow-delay]').forEach(function(el) {
+                var original = parseFloat(el.getAttribute('data-wow-delay'));
+                if (!isNaN(original) && original > 0.1) {
+                    el.setAttribute('data-wow-delay', Math.max(0.1, original * 0.35) + 's');
+                }
+            });
+        }
         new WOW().init();
 
          //>> Video Popup Start <<//

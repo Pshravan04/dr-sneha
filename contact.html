@@ -362,6 +362,17 @@
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 700;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .breadcrumb-wrapper p { max-width: 100%; }
+        }
+        @media (max-width: 991px) {
+            .section-padding-custom { padding: 60px 0; }
+            .contact-info-wrap .contact-heading { font-size: 26px; }
+        }
     </style>
 
     </head>
@@ -520,7 +531,7 @@
                    <div class="breadcrumb-items-area">
                         <div class="breadcrumb-sub-title">
                              <h1 class="text-white wow fadeInUp" data-wow-delay=".3s">Contact</h1>
-                             <p class="text-white wow fadeInUp mt-2" data-wow-delay=".4s" style="font-size: 16px; opacity: 0.85; max-width: 500px;">I'm here — reach out whenever you're ready.</p>
+                             <p class="text-white wow fadeInUp mt-2" data-wow-delay=".4s" style="font-size: 16px; opacity: 0.85; max-width: 80%;">I'm here — reach out whenever you're ready.</p>
                          </div>
                          <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                              <li>
